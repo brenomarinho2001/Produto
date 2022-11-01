@@ -11,17 +11,13 @@ module.exports = function(){
             type: String,
             required: true
        },
-       senha: {
-            type: String,
-            required: true
-       },
        endereco: {
             type: mongoose.Schema.ObjectId,
             ref: 'Endereco'
        },
        senha: {
-            type: mongoose.Schema.ObjectId,
-            required: 'Pedido'
+          type: String,
+          required: true
        }
    });
    return mongoose.model('Usuario', schema);

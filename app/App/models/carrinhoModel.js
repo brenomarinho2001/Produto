@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-
+// Modelo de Carrinho >> 
 
 module.exports = function(){
    var schema = mongoose.Schema({

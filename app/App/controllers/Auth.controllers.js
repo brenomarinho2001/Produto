@@ -1,19 +1,21 @@
-let jwt = require("jsonwebtoken");
-let Contato = require("../models/contatos.model.js");
+let Usuario = require('../models/usuario.model.js');
+let bcrypt = require('bcrypt');
+let jwt = require('jsonwebtoken');
+const { JsonWebTokenError } = require("jsonwebtoken");
 
-// POST/contatos/signin
+// POST/usuarios/signin
 module.exports.logar = function(req, res){
-    // Ver as variaveis (nomenclatura)
-    let nome = req.body.nome;
-    let promise = Contato.findOne({nome: req.body.nome})
+    let email = req.body.email;
+    let senha_requisicao = req.body.senha;
+    let promise = Usuario.findOne({"email": email})
     .then(
-        function(contato){
-            if(req.body.tel, contato.tel){
+        function(usuario){
+            if(bcrypt.compareSync(senha_requisicao, usuario.senha)){
                 let token = jwt.sign({
-                    id_contato: contato._id,
-                    nome: contato.nome
-                },"senha")
-                res.status(200).json({token: token});
+                    id_usuario: usuario._id,
+                    nome: usuario.nome
+                },"VERTER2022")
+                res.status(200).json({token: token, nome: usuario.nome});
             }else {
                 res.status(401).send("credenciais erradas!")
         }
@@ -23,12 +25,12 @@ module.exports.logar = function(req, res){
         }
     )
 }
-// Checar Token
+// token
 module.exports.checar = function(req, res, next){
     let token = req.headers.token;
-    jwt.verify(token,"senha", function(err, decoded){
+    jwt.verify(token, "VERTER2022", function(err, decoded){
         if(err){
-            res.status(401).json("Token inválido!")
+            res.status(401).json("Token inválido!");
         }else{
         next();
         }
