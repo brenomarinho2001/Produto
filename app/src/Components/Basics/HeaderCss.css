@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 10vh;
+    width: 100%;
+    background: #000;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul{
+    list-style: none;
+}
+header ul li{
+    float: left;
+    margin: 15px;
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+.nav-buttons a{
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+}
+.nav-buttons .icon{
+    font-size: 25px;
+    color: white;
+    padding-right: 40px;
+    cursor: pointer;
+}
+.nav-buttons .login-btn{
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    transition: all 700ms ease;
+}
+.nav-buttons .login-btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+.nav-buttons .cad-btn{
+    border: 2px solid #66449c;
+    background-color: #66449c;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    transition: all 700ms ease;
+}
+.nav-buttons .cad-btn:hover{
+    background-color: #66449c;
+}
+
+
+@font-face {
+    font-family: 'minhafont';
+    src: url('../Fonts/Conthrax\ Regular.ttf');
+}
+
+.texto{
+    font-family: 'minhafont';
+}
+

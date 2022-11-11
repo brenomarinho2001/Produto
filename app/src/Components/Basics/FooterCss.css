@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    color: #fff;
+    background-color: black;
+    padding: 40px;
+    height: '20%';
+    position: relative;
+    
+}
+footer .footer-body{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 10px;
+    
+
+    
+    
+}
+
+.imgfooter{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+.imgfooter2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.inputs{
+    color: #fff;
+    background-color: transparent;
+    height: 40px;
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 2px;
+    border-color: white;
+}
+
+.button{
+    background-color: #492C79;
+    border: none;
+    padding: 17px;
+    color: #fff;
+    cursor: pointer;
+    width: 150px;
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'minhafont';
+    src: url('../Fonts/Conthrax\ Regular.ttf');
+}
+
+.texto{
+    font-family: 'minhafont';
+
+}
+
+
+@font-face {
+    font-family: 'minhasource';
+    src: url('../Fonts/SourceSansPro-SemiBold.ttf');
+}

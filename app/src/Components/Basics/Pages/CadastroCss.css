@@ -1,0 +1,30 @@
+.inputs{
+    color: #fff;
+    background-color: transparent;
+    height: 40px;
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 2px;
+    border-color: white;
+}
+
+.inputsCadastro{
+    color: #fff;
+    background-color: transparent;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    border-radius: 2px;
+    padding-left: 10px;
+    border-color: white;
+}
+
+.boxCadastro{
+    border-bottom: 1px solid rgba(90, 29, 109, 0.8);
+   
+}
+
+.texto2{
+    font-family: 'minhasource'
+}
