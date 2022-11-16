@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000;
+}
+.back-color{
+    background: linear-gradient(0deg, rgba(38,22,64,1) 27%, rgba(0,0,0,0) 100%);
+    top: -10%;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    filter: blur(180px);
+    z-index: -1;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+.filtros{
+    width: 100%;
+    height: 90px;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: minhafont;
+    font-size: 12px;
+}
+.filtros .filtro{
+    margin: 20px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    width: 160px;
+    cursor: pointer;
+}
+.main aside{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    color: #fff;
+}
+aside .categoria{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    text-align: left;
+    font-family: minhafont;
+    font-size: 14px;
+}
+aside .categoria h2{
+    margin: 10px;
+    font-size: 20px;
+}
+aside .categoria ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+aside .categoria ul li{
+    margin: 10px;
+}
+.categoria ul li .check-container{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.categoria ul li .check-container label{
+    margin-left: 30px;
+    cursor: pointer;
+}
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.check{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.check-container:hover input ~ .check {
+    background-color: rgba(204, 204, 204, 0.4);
+}
+.check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.check-container input:checked ~ .check:after {
+    display: block;
+}
+.check-container .check:after {
+    left: 7px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.main .produtos{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.main .produtos .pro-card{
+    width: 310px;
+    height: 444px;
+    margin: 10px;
+    background: linear-gradient(49deg, rgba(0,0,0,0.2) 0%, rgba(50,31,82,1) 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+
+}
+.produtos .pro-card img{
+    margin-bottom: 40px;
+}
+.produtos .pro-card .card-content{
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #D8C4E5;
+    width: 70%;
+}
+.produtos .pro-card .card-content p{
+    word-spacing: 7px;
+    margin: 5px;
+    font-weight: 700;
+}
+
+.produtos .pro-card .card-content span{
+    font-family: minhafont;
+}
+
+
+
+
