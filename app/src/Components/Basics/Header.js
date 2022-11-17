@@ -15,7 +15,7 @@ export default function Header(){
         <ul style={{padding:'30px',display:'flex',alignItems:'center'}}>
             <img src={logo} alt="Logo" style={{marginLeft:'20px',cursor:'pointer'}}/>
             <div>
-                <li><a href="www.google.com" class='texto' style={{fontSize:'15px'}}>ini­cio</a></li>
+                <li><a href="/Home" class='texto' style={{fontSize:'15px'}}>ini­cio</a></li>
                 <li><a href="www.google.com" class='texto' style={{fontSize:'15px'}}>produtos</a></li>
                 <li><a href="www.google.com" class='texto' style={{fontSize:'15px'}}>sobre a verter</a></li>
                 <li><a href="www.google.com" class='texto' style={{fontSize:'15px'}}>contato</a></li>
