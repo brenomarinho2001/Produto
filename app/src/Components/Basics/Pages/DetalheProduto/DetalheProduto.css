@@ -24,11 +24,36 @@ body {
     text-align: left;
 }
 
+.product {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+}
+
+.productinfo {
+    justify-self: flex-start;
+    max-width: 500px;
+    width: 100%;
+}
+
+.titlecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+    width: 100%;
+}
 
 .title {
     font-size: 30px;
     color: #fff;
     font-family: 'Conthrax Regular';
+}
+
+.favicon {
+    color: #fff;
+    cursor: pointer;
 }
 
 .subtitle {
@@ -54,6 +79,11 @@ body {
     cursor: pointer;
     transition: all 700ms ease;
     font-size: 13px;
+}
+
+.buttontam.selected {
+    background: #fff !important;
+    color: #0C0B10 !important;
 }
 
 .textbutton {
@@ -130,9 +160,62 @@ body {
 
 .text {
     padding-right: 90px;
-    margin-top: 124px;
+    margin-top: 56px;
     font-size: 20px;
     color: #D8C4E5;
     font-family: 'Source Sans Pro';
     font-weight: lighter;
+}
+
+.imgqr {
+    margin-top: 8px;
+    width: 280px;
+}
+
+.paymentcontainer {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.imagecontainer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagemock {
+    background-color: #D8C4E5;
+    background: linear-gradient(16.28deg, #000000 -41.06%, #321f52 72.61%);
+    height: 460px;
+    max-width: 536px;
+    width: 100%;
+}
+
+.imageslider {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    overflow-x: auto;
+    margin-top: 16px;
+    max-width: 536px;
+    width: 100%;
+}
+
+.imageslider .imagemock {
+    cursor: pointer;
+    flex-shrink: 0;
+    height: 122px !important;
+    width: 122px !important;
+}
+
+@media only screen and (max-width: 800px) {
+    .product {
+        flex-direction: column-reverse;
+    }
+
+    .productinfo, .imagemock, .imageslider {
+        max-width: 100%;
+    }
 }

@@ -1,50 +1,66 @@
+
+
 import Footers from '../../Footers'
 import Header from '../../Header'
+import SelectSize from './components/SelectSize';
+import Favorite from './components/Favorite';
 import './DetalheProduto.css'
 
-// import qrcode from 'public/qrcode.png'
-
+import qrcode from '../../imgs/qrcode.png';
+import pix from '../../imgs/pix.png';
+import pagseguro from '../../imgs/pagseguro.png';
 
 export default function DetalheProduto () {
     return (
         <div className='container'> 
             <Header style={{height:'20%'}}/>
             <div className='content'>
-                <h1 className='title'>Lorem Ipsum</h1>
-                <div className='favicon'> </div>
+                <div className='product'>
+                    <div className='productinfo'>
+                        <div className='titlecontainer'>
+                            <h1 className='title'>Lorem Ipsum</h1>
+                            <Favorite />
+                        </div>
 
-                <h2 className='subtitle'>Escolha o tamanho/tipo</h2>
-                <div className='buttoncontainer'>
-                    <button className='buttontam'> P </button>
-                    <button className='buttontam'> M </button>
-                    <button className='buttontam'> G </button>
-                    <button className='buttontam'> G1 </button>
-                    <button className='buttontam'> G2 </button>
-                    <button className='buttontam'> Digital </button>
-                </div>
+                        <h2 className='subtitle'>Escolha o tamanho/tipo</h2>
+                        <SelectSize />
 
-                <div className='buttoncontainer'>
-                    <button className='textbutton'>
-                        ver tabela de tamanhos
-                    </button>
-                </div>
+                        <div className='buttoncontainer'>
+                            <button className='textbutton'>
+                                ver tabela de tamanhos
+                            </button>
+                        </div>
 
-                {/* <img className='imgqr' src={qrcode}/> */}
+                        <img className='imgqr' src={qrcode}/>
 
-                <h2 className='subtitle2'>taxa de entrega</h2>
-                <div className='cepcontainer'>
-                    <input placeholder='Seu CEP' className="inputCep"/>
-                    <button className='buttoncalc'> Calcular </button>:
-                </div>
+                        <h2 className='subtitle2'>taxa de entrega</h2>
+                        <div className='cepcontainer'>
+                            <input placeholder='Seu CEP' className="inputCep"/>
+                            <button className='buttoncalc'> Calcular </button>:
+                        </div>
 
-                <h2 className='subtitle2'>formas de pagamento</h2>
+                        <h2 className='subtitle2'>formas de pagamento</h2>
 
-                {/* <img className='pix' src={}/>
-                <img className='pagseguro' src={}/> */}
+                        <div className='paymentcontainer'>
+                            <img className='pix' src={pix} alt="Pix" />
+                            <img className='pagseguro' src={pagseguro} alt="PagSeguro" />
+                        </div>
+                        <div className='buttoncontainer'>
+                            <button className='buttoncomprar'> Comprar agora </button>
+                            <button className='buttonadic'> Adicionar ao carrinho </button>
+                        </div>
+                    </div>
+                    <div className='imagecontainer'>
+                        <div className='imagemock' />
 
-                <div className='buttoncontainer'>
-                <button className='buttoncomprar'> Comprar agora </button>
-                <button className='buttonadic'> Adicionar ao carrinho </button>
+                        <div className='imageslider'>
+                            <div className='imagemock' />
+                            <div className='imagemock' />
+                            <div className='imagemock' />
+                            <div className='imagemock' />
+                            <div className='imagemock' />
+                        </div>
+                    </div>
                 </div>
 
                 <h3 className='subtitle3'> Sobre o produto </h3>
@@ -53,10 +69,8 @@ export default function DetalheProduto () {
                 </p>
 
                 <h3 className='subtitle3'> Quem viu comprou </h3>
-                
             </div>
             <Footers/>
         </div>
-        
     )
 }
