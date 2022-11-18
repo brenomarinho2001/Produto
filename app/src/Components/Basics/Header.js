@@ -16,7 +16,7 @@ export default function Header(){
             <img src={logo} alt="Logo" style={{marginLeft:'20px',cursor:'pointer'}}/>
             <div>
                 <li><a href="/Home" class='texto' style={{fontSize:'15px'}}>ini­cio</a></li>
-                <li><a href="/DetalheProduto" class='texto' style={{fontSize:'15px'}}>produtos</a></li> 
+                <li><a href="/Produtos" class='texto' style={{fontSize:'15px'}}>produtos</a></li> 
                 {/* isso nao eh p ficar assim, coloquei so p gente conseguir ver a pagina de detalhe do produto */}
                 <li><a href="www.google.com" class='texto' style={{fontSize:'15px'}}>sobre a verter</a></li>
                 <li><a href="www.google.com" class='texto' style={{fontSize:'15px'}}>contato</a></li>

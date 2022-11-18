@@ -1,8 +1,137 @@
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
+
+
 body {
     background: #000;
+    color: white;
+}
+
+@font-face {
+    font-family: 'minhafont';
+    src: url('../../../Fonts/Conthrax\ Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'minhasource';
+    src: url('../../../Fonts/SourceSansPro-SemiBold.ttf');
+}
+
+.banner-todo{
+    background-image: url('../../../Basics/imgs/banner.png');
+}
+
+.banners{
+  width: 100%;
+  height: 766px;
+
+}
+
+.tituolo-sessao{
+    text-align: left;
+    padding-left: 80px;
+    font-family: 'minhafont';
+}
+
+.titulo-banner{
+    font-family: 'minhafont';
+    font-size: 50px;
+    width: 650px;
+    text-align: left;
+    padding-left: 140px;
+    padding-top: 280px;
+    color: white
+
+}
+
+.botoes{
+    display: flex;
+    padding-left: 140px;
+    padding-top: 50px;
+}
+.botoes a{
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+}
+
+.botao_saiba{
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    transition: all 700ms ease;
+    text-decoration: none;
+    color: white;
+}
+.botao_saiba:hover{
+    background-color: #fff;
+    color: #000;
+}
+.botao_produtos{
+    border: 2px solid #66449c;
+    background-color: #66449c;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    transition: all 700ms ease;
+}
+.botao_produtos:hover{
+    background-color: #66449c;
+}
+
+.produtos{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.produtos .pro-card{
+    width: 310px;
+    height: 444px;
+    margin: 10px;
+    background: linear-gradient(49deg, rgba(0,0,0,0.2) 0%, rgba(50,31,82,1) 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+
+}
+.produtos .pro-card img{
+    margin-bottom: 40px;
+}
+.produtos .pro-card .card-content{
+    padding: 5px;
+    text-align: left;
+    border-top: 1px solid #D8C4E5;
+    width: 70%;
+}
+.produtos .pro-card .card-content p{
+    word-spacing: 7px;
+    margin: 5px;
+    font-weight: 700;
+}
+
+.produtos .pro-card .card-content span{
+    font-family: minhafont;
+}
+
+.anuncio{
+    font-family: 'minhafont';
+    height: 230px; 
+}
+.sub-texto{
+    padding: 20px 40px;
+    
+}
+
+.direita{
+    align-items: flex-start;
 }
