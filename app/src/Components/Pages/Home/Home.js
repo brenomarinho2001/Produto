@@ -1,7 +1,7 @@
-import Footers from '../../Footers'
-import Header from '../../Header'
+import Header from "../../Basics/Header/Header";
+import Footers from "../../Basics/Footer/Footers";
 import './Home.css'
-import imgcamisa from '../../../img/image18.png'
+import imgcamisa from '../../images/Roupas/camisa.png'
 
 export default function Home () {
     return (

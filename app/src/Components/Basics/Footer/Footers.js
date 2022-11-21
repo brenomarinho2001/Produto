@@ -10,9 +10,9 @@ import { FaFacebookF } from "react-icons/fa";
 
 import { BsTwitter } from "react-icons/bs";
 
-import imgfooterright from './imgs/imgfooterback.png'
+import imgfooterright from '../../images/footer_01.png'
 
-import imgfooterleft from './imgs/imgfooterbackleft.png'
+import imgfooterleft from '../../images/footer_02.png'
 
 
 

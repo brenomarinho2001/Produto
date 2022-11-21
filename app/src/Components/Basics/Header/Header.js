@@ -5,7 +5,7 @@ import { BsBag } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 
 //IMAGEM LOGO
-import logo from '../Resources/logoverter.png';
+import logo from '../../Resources/logoverter.png';
 
 export default function Header(){
 

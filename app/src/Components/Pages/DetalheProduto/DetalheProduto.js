@@ -1,14 +1,14 @@
 
 
-import Footers from '../../Footers'
-import Header from '../../Header'
+import Header from "../../Basics/Header/Header";
+import Footers from "../../Basics/Footer/Footers";
 import SelectSize from './components/SelectSize';
 import Favorite from './components/Favorite';
 import './DetalheProduto.css'
 
-import qrcode from '../../imgs/qrcode.png';
-import pix from '../../imgs/pix.png';
-import pagseguro from '../../imgs/pagseguro.png';
+import qrcode from '../../images/qrcode.png';
+import pix from '../../images/pix.png';
+import pagseguro from '../../images/pagseguro.png';
 
 export default function DetalheProduto () {
     return (

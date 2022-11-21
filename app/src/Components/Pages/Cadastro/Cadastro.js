@@ -2,8 +2,8 @@
 
 import { FaUser } from "react-icons/fa";
 import { AiFillLock } from "react-icons/ai";
-import Header from "../Header";
-import Footers from "../Footers";
+import Header from "../../Basics/Header/Header";
+import Footers from "../../Basics/Footer/Footers";
 
 import './CadastroCss.css'
 

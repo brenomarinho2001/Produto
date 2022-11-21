@@ -14,17 +14,17 @@ body {
 
 @font-face {
     font-family: 'minhafont';
-    src: url('../../../Fonts/Conthrax\ Regular.ttf');
+    src: url('../../Fonts/Conthrax\ Regular.ttf');
 }
 
 
 @font-face {
     font-family: 'minhasource';
-    src: url('../../../Fonts/SourceSansPro-SemiBold.ttf');
+    src: url('../../Fonts/SourceSansPro-SemiBold.ttf');
 }
 
 .banner-todo{
-    background-image: url('../../../Basics/imgs/banner.png');
+    background-image: url('../../images/banner.png');
 }
 
 .banners{

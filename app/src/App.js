@@ -2,12 +2,12 @@
 import './App.css';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Cadastro from './Components/Basics/Pages/Cadastro';
-import Login from './Components/Basics/Pages/Login/Login';
-import Home from './Components/Basics/Pages/Home/Home';
-import ProdutosLista from './Components/ProdutosLista';
-import Footers from './Components/Basics/Footers';
-import DetalheProduto from './Components/Basics/Pages/DetalheProduto/DetalheProduto';
+import Cadastro from '../src/Components/Pages/Cadastro/Cadastro';
+import Login from '../src/Components/Pages/Login/Login';
+import Home from '../src/Components/Pages/Home/Home';
+import ProdutosLista from '../src/Components/Pages/ProdutosLista/ProdutosLista';
+//import Footers from '../src/Components/Basics/Footers';
+import DetalheProduto from '../src/Components/Pages/DetalheProduto/DetalheProduto';
 
 
 function App() {

@@ -64,7 +64,7 @@ header ul li a{
 
 @font-face {
     font-family: 'minhafont';
-    src: url('../Fonts/Conthrax\ Regular.ttf');
+    src: url('../../Fonts/Conthrax\ Regular.ttf');
 }
 
 .texto{

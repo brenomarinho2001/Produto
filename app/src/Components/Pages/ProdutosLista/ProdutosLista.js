@@ -1,7 +1,7 @@
-import Footers from '../Components/Basics/Footers'
-import Header from '../Components/Basics/Header'
+import Footers from '../../Basics/Footer/Footers'
+import Header from '../../Basics/Header/Header'
 import './ProdutosListaCss.css'
-import imgcamisa from './img/image18.png'
+import imgcamisa from '../../images/Roupas/camisa.png'
 
 import { FaUser } from "react-icons/fa";
 import { AiFillLock } from "react-icons/ai";

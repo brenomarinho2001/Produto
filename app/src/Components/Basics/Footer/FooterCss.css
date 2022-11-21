@@ -60,7 +60,7 @@ footer .footer-body{
 
 @font-face {
     font-family: 'minhafont';
-    src: url('../Fonts/Conthrax\ Regular.ttf');
+    src: url('../../Fonts/Conthrax\ Regular.ttf');
 }
 
 .texto{
@@ -71,5 +71,5 @@ footer .footer-body{
 
 @font-face {
     font-family: 'minhasource';
-    src: url('../Fonts/SourceSansPro-SemiBold.ttf');
+    src: url('../../Fonts/SourceSansPro-SemiBold.ttf');
 }

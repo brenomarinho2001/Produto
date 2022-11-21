@@ -1,5 +1,5 @@
-import Footers from '../../Footers'
-import Header from '../../Header'
+import Header from "../../Basics/Header/Header";
+import Footers from "../../Basics/Footer/Footers";
 import './LoginCss.css'
 
 import { FaUser } from "react-icons/fa";
