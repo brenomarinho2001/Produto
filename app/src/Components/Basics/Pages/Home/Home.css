@@ -134,11 +134,21 @@ body {
 }
 .destaque{
     height: 500px;
+    display: flex;
 }
+
 .esquerda{
     text-align: left;
     font-family: 'minhafont';
     padding-left: 180px;
     align-items: center;
     align-content: center;
+}
+
+.direita{
+    display: block;
+    background-color: 161616;
+    height: 430px;
+    width: 430px;
+    align-content: flex-end;
 }
