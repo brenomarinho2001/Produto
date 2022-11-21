@@ -86,18 +86,20 @@ export default function Home () {
             </div>
 
             <div className='destaque'>
-                <div className='direita'>
+                <div className='esquerda'>
 
                 <h2 className='titulo-central'> Na medida para <br/> seu corpo </h2>
                 <h4 className='sub-texto'> Entenda o conceito das roupas <br/> digitais e fique por dentro</h4> <br/>
+                <a href="/Login" class="botao_saiba">Saiba Mais</a>
                 </div>
 
-                <div className='esqueda'>
+                <div className='direita'>
 
                     <div className='expositor'>
-                
+                        <img src={'imgcamisa'}/>
 
                     </div>
+
                 </div>
             </div>
             <Footers/>

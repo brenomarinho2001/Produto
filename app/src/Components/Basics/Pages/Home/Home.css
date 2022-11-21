@@ -8,7 +8,7 @@
 
 
 body {
-    background: #000;
+
     color: white;
 }
 
@@ -128,10 +128,17 @@ body {
     height: 230px; 
 }
 .sub-texto{
-    padding: 20px 40px;
+    padding-top:  15px;
+    padding-bottom: 40px;
     
 }
-
-.direita{
-    align-items: flex-start;
+.destaque{
+    height: 500px;
+}
+.esquerda{
+    text-align: left;
+    font-family: 'minhafont';
+    padding-left: 180px;
+    align-items: center;
+    align-content: center;
 }
