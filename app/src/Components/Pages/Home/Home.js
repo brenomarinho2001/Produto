@@ -96,7 +96,7 @@ export default function Home () {
                 <div className='direita'>
 
                     <div className='expositor'>
-                        <img src={'imgcamisa'}/>
+                        <img src={imgcamisa}/>
 
                     </div>
 
