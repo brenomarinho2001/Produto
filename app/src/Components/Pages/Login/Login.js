@@ -4,10 +4,28 @@ import './LoginCss.css'
 
 import { FaUser } from "react-icons/fa";
 import { AiFillLock } from "react-icons/ai";
-
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { auth } from "../../../service/firebase_config";
+import { useState } from 'react';
 
 export default function Login(){
-
+    // Firebase
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('');
+    const [signInWithEmailAndPassword, loading, error] = 
+    useSignInWithEmailAndPassword(auth);
+    
+    function handleSignIn(e){
+        e.preventDefault()
+        signInWithEmailAndPassword(email, password)
+    }
+    if (loading) {
+        return window.localtion.href = 'http://localhost:3000/Home:'
+    }
+    if (error) {
+        return window.alert("Senha ou Email Inválido")
+    }
+    ////////////////
     return(
         <div style={{height:'100vh'}}>
 
@@ -21,18 +39,18 @@ export default function Login(){
                         <div class="login-icon">
                             <FaUser className='icons'/>
                         </div>
-                        <input type='text' placeholder='Seu usuario'></input>
+                        <input onChange={e => setEmail(e.target.value)} type='text' placeholder='Seu email'></input>
                     </div>
                     <div class="inputs-row">
                         <div class="login-icon">
                             <AiFillLock className='icons'/>
                         </div>
-                        <input type='password' placeholder='Sua senha'></input>
+                        <input onChange={e => setPassword(e.target.value)} type='password' placeholder='Sua senha'></input>
                     </div>
                     <a href="">Esqueci minha senha</a>
                 </div>
                 <div class="login-buttons">
-                    <button class="btn-entrar">Entrar</button>
+                    <button onClick={handleSignIn} class="btn-entrar">Entrar</button>
                     <button class="btn-cad">Cadastre agora</button>
                 </div>
             </div>

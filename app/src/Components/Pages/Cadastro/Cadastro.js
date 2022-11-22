@@ -1,20 +1,33 @@
-
-
 import { FaUser } from "react-icons/fa";
 import { AiFillLock } from "react-icons/ai";
 import Header from "../../Basics/Header/Header";
 import Footers from "../../Basics/Footer/Footers";
 
 import './CadastroCss.css'
-
+import { useState } from "react";
 //IMAGEM
-
+//Firebase
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { auth } from "../../../service/firebase_config";
 
 
 export default function Cadastro(){
-
+     //Firebase
+     const [email, setEmail] = useState('')
+     const [password, setPassword] = useState('');
+     const [createUserWithEmailAndPassword, loading] = 
+     useCreateUserWithEmailAndPassword(auth);
+     
+     function handleSignOut(e){
+         e.preventDefault()
+         createUserWithEmailAndPassword(email, password)
+     }
+     if (loading) {
+         return window.alert("Cadastrado com Sucesso!")
+       }
+     ////////
     return(
         <div style={{height:'100vh',backgroundColor:'black',color:'white'}}>
 
@@ -32,10 +45,16 @@ export default function Cadastro(){
                                 <div style={{width:'50%',paddingRight:'20px',textAlign:'left'}}>
                                     <h1 style={{paddingBottom:'10px',marginLeft:'0',fontSize:'20px' }} class='texto'>Dados Pessoais:</h1>
                                     <div style={{display:'flex',flexDirection:'column'}}>
-                                        <input placeholder='Seu e-mail' className="inputsCadastro"/>
+                                        <input 
+                                            onChange={e => setEmail(e.target.value)}
+                                            placeholder='Seu e-mail'
+                                            className="inputsCadastro"/>
                                         <input placeholder='Nome Completo' className="inputsCadastro"/>
                                         <input placeholder='Data de Nascimento' className="inputsCadastro"/>
-                                        <input placeholder='Sua Senha' className="inputsCadastro"/>
+                                        <input 
+                                            onChange={e => setPassword(e.target.value)}
+                                            placeholder='Sua Senha' 
+                                            className="inputsCadastro"/>
                                         <input placeholder='Confirmar Senha' className="inputsCadastro"/>
 
                                     </div>
@@ -55,7 +74,11 @@ export default function Cadastro(){
                                             <input placeholder='Estados' className="inputsCadastro"/>
                                             <input placeholder='Cidade' className="inputsCadastro"/>
                                             
-                                            <button style={{width:'103%',height:'40px',backgroundColor:'#66449c',color:'white',cursor:'pointer'}}>Cadastrar</button>
+                                            <button onClick={handleSignOut} style={{width:'103%',height:'40px',
+                                                backgroundColor:'#66449c',color:'white',
+                                                cursor:'pointer'}
+                                                }>Cadastrar
+                                            </button>
                                         
                                         </div>
 
