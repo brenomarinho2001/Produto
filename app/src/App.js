@@ -8,6 +8,7 @@ import Home from '../src/Components/Pages/Home/Home';
 import ProdutosLista from '../src/Components/Pages/ProdutosLista/ProdutosLista';
 //import Footers from '../src/Components/Basics/Footers';
 import DetalheProduto from '../src/Components/Pages/DetalheProduto/DetalheProduto';
+import Carrinho from './Components/Pages/Carinho/Carrinho';
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
         <Route path="/" element={<Login/>}></Route>
         <Route path="/Cadastro" element={<Cadastro/>}></Route>
         <Route path="/Login" element={<Login/>}></Route>
-        <Route path="/produtos" element={<ProdutosLista/>}></Route>
+        <Route path="/Produtos" element={<ProdutosLista/>}></Route>
+        <Route path="/Carrinho" element={<Carrinho/>}></Route>
       </Routes>
     </BrowserRouter>
     </div>

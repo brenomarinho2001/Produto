@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+.progress{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    color:#D8C4E5;
+}
+.progress h2{
+    margin-left: 35px;
+}
+.progress .progress-bar span{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.bar{
+    width: 100%;
+    height: 2px;
+    background-color: #321F52;
+    position: relative;
+}
+.bar .cor{
+    width: 33.3%;
+    height: 5px;
+    background-color: #492C79;
+    position: absolute;
+    left: 0;
+    top: -50%;
+}
+.car-body{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+.car-body .car-cards{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.car-body .car-cards .card{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    background: rgba(50, 31, 82, 0.49);
+}
+.car-body .car-cards .card .card-img{
+    width: 20%;
+    background-color: #321F52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.car-body .car-cards .card .card-img img{
+    height: 170px;
+}
+.car-body .car-cards .card .card-body{
+    color: #fff;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.card .card-body .card-title{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 22px;
+}
+.card .card-body .card-desc .desc{
+    width: 120px;
+    height: 25px;
+    border: 3px solid #fff;
+    margin: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+.card .card-body .delete{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #EE3875;
+    border-radius: 50%;
+    right: 0.5%;
+    bottom: 5%;
+}
+.car-body .car-pay{
+    width: 40%;
+    background: rgba(50, 31, 82, 0.49);
+    border-radius: 6px;
+    margin: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    color: #fff;
+    height: 100%;
+}
+.car-body .car-pay button{
+    cursor: pointer;
+}
+.car-body .car-pay .pay-tittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #492C79;
+    padding: 5px;
+}
+.car-body .car-pay .entrega{
+    padding: 10px;
+    border-bottom: 1px solid #492C79;
+}
+.car-body .car-pay .entrega input{
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 12px;
+    color: #fff;
+    width: 50%;
+    margin-bottom: 5px;
+    
+}
+.car-body .car-pay .entrega input::placeholder{
+    color: #fff;
+}
+.car-body .car-pay .entrega button{
+    color: #fff;
+    border: transparent;
+    padding: 14px;
+    background-color: #492C79;
+    width: 42%;
+}
+.car-body .car-pay .entrega .correio{
+    border: 2px solid #fff;
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.car-body .car-pay .entrega .correio .correio-lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+}
+.car-body .car-pay .entrega .correio  input{
+    height: 30px;
+    width: 20%;
+}
+.car-pay .cupom{
+    padding: 10px;
+    border-bottom: 1px solid #492C79;
+}
+.car-pay .cupom h2{
+    margin-bottom: 5px;
+}
+.car-pay .cupom input{
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 12px;
+    color: #fff;
+    width: 50%;
+}
+.car-pay .cupom input::placeholder{
+    color: #fff;
+}
+.car-pay .cupom button{
+    color: #fff;
+    border: transparent;
+    padding: 14px;
+    background-color: #492C79;
+    width: 42%;
+}
+.car-pay .pay-desc{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+.car-pay .compra-btn{
+    background-color: #492C79;
+    color: #fff;
+    border: transparent;
+    padding: 17px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.car-pay .continuar-btn{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px;
+    width: 100%;
+}
+.quemviu{
+    margin: 30px;
+}
+.recomendacao{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+.recomendacao .rec-card{
+    width: 310px;
+    height: 397px;
+    margin: 10px;
+    background: linear-gradient(49deg, rgba(0,0,0,0.2) 0%, rgba(50,31,82,1) 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.recomendacao .rec-card img{
+    margin-bottom: 40px;
+}
+.recomendacao .rec-card .card-content{
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #D8C4E5;
+    width: 70%;
+}
+.recomendacao .rec-card .card-content p{
+    word-spacing: 7px;
+    margin: 5px;
+}
