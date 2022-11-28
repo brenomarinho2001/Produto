@@ -98,7 +98,7 @@ export default function Carrinho() {
                 <div class="entrega">
                     <h2>Calcular entrega</h2>
                     <br/>
-                    <input type="text" placeholder="Insira seu CEP" style={{paddingRight:'10px'}}/>
+                    <input type="text" placeholder="Insira seu CEP" style={{marginRight:'20px'}}/>
                     <button>Calcular</button>
                     <div class="correio">
                         <div class="correio-lista">
@@ -114,7 +114,7 @@ export default function Carrinho() {
                 </div>
                 <div class="cupom">
                     <h2>Cupom de Desconto</h2>
-                    <input type="text" placeholder="Insira o cupom"/>
+                    <input type="text" placeholder="Insira o cupom" style={{marginRight:'20px'}}/>
                     <button>Inserir</button>
                 </div>
                 <div class="pay-desc">
@@ -130,7 +130,7 @@ export default function Carrinho() {
                     <span>R$00,00</span>
                 </div>
                 <button class="compra-btn">Finalizar Compra</button>
-                <button class="continuar-btn">Continuar Comprando</button>
+                <a href='/Pagamento'><button class="continuar-btn">Continuar Comprando</button></a>
             </div>
         </div>
         <h2 class="quemviu">Quem viu comprou</h2>

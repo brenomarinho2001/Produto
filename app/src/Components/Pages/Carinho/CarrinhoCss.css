@@ -27,7 +27,7 @@ body{
     position: relative;
 }
 .bar .cor{
-    width: 33.3%;
+    width: 4.3%;
     height: 5px;
     background-color: #492C79;
     position: absolute;
@@ -118,6 +118,7 @@ body{
 .car-body .car-pay .entrega{
     padding: 10px;
     border-bottom: 1px solid #492C79;
+    text-align: left;
 }
 .car-body .car-pay .entrega input{
     background: transparent;
@@ -161,6 +162,7 @@ body{
 .car-pay .cupom{
     padding: 10px;
     border-bottom: 1px solid #492C79;
+    text-align: left;
 }
 .car-pay .cupom h2{
     margin-bottom: 5px;

@@ -9,6 +9,8 @@ import ProdutosLista from '../src/Components/Pages/ProdutosLista/ProdutosLista';
 //import Footers from '../src/Components/Basics/Footers';
 import DetalheProduto from '../src/Components/Pages/DetalheProduto/DetalheProduto';
 import Carrinho from './Components/Pages/Carinho/Carrinho';
+import Pagamento from './Components/Pages/Pagamento/Pagamento';
+import Finalizar from './Components/Pages/Finalizar/Finalizar';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
         <Route path="/Login" element={<Login/>}></Route>
         <Route path="/Produtos" element={<ProdutosLista/>}></Route>
         <Route path="/Carrinho" element={<Carrinho/>}></Route>
+        <Route path="/Pagamento" element={<Pagamento/>}></Route>
+        <Route path="/Finalizar" element={<Finalizar/>}></Route>
       </Routes>
     </BrowserRouter>
     </div>
