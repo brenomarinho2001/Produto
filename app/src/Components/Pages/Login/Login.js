@@ -51,7 +51,7 @@ export default function Login(){
                 </div>
                 <div class="login-buttons">
                     <button onClick={handleSignIn} class="btn-entrar">Entrar</button>
-                    <button class="btn-cad">Cadastre agora</button>
+                    <a href="/Cadastro" style={{width:'92%'}}><button class="btn-cad">Cadastre agora</button></a>
                 </div>
             </div>
         </section>

@@ -3,16 +3,10 @@
 // import Header from "../../Basics/Header/Header";
 // import Footers from "../../Basics/Footer/Footers";
 
-import Footers from '../../Basics/Footer/Footers'
-import Header from '../../Basics/Header/Header'
-import './CarrinhoCss.css'
+import './PagamentoCss.css'
 
-export default function Carrinho() {
+export default function Pagamento() {
     return (
-        <div>
-            <Header/>
-
-        
         <div> 
             <div class="progress">
             <h2>Carrinho</h2>
@@ -171,8 +165,6 @@ export default function Carrinho() {
                 </div>
             </div>
         </div>
-        </div>
-        <Footers/>
         </div>
     )
 }
