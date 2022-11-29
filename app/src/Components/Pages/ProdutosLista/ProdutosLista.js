@@ -9,6 +9,32 @@ import { AiFillLock } from "react-icons/ai";
 
 export default function ProdutosLista(){
 
+
+    var produtos_no_carrinhos = []
+
+    function adicionar_produto_01(){
+        
+        var produto_01 = {
+            'nome':'Camisa_01',
+            'preco':10.00
+        }
+        produtos_no_carrinhos.push(produto_01)
+        console.log(produtos_no_carrinhos)
+
+    }
+
+    function adicionar_produto_02(){
+        
+        var produto_02 = {
+            'nome':'Camisa_02',
+            'preco':30.00
+        }
+        produtos_no_carrinhos.push(produto_02)
+        console.log(produtos_no_carrinhos)
+
+    }
+
+
     return(
         <>
         <Header/>
@@ -87,7 +113,9 @@ export default function ProdutosLista(){
                             <div class="card-content">
                                 <span>Camisa ALG correntes</span>
                                 <p>R$69,90</p>
+                                <button onClick={adicionar_produto_01}>Adicionar ao Carrinho</button>
                             </div>
+                            
                         </div>
 
                         <div class="pro-card">
@@ -95,54 +123,11 @@ export default function ProdutosLista(){
                             <div class="card-content">
                                 <span>Camisa ALG correntes</span>
                                 <p>R$69,90</p>
+                                <button onClick={adicionar_produto_02}>Adicionar ao Carrinho</button>
                             </div>
+                            
                         </div>
-
-                        <div class="pro-card">
-                            <img src={imgcamisa}/>
-                            <div class="card-content">
-                                <span>Camisa ALG correntes</span>
-                                <p>R$69,90</p>
-                            </div>
-                        </div>
-
-                        <div class="pro-card">
-                            <img src={imgcamisa}/>
-                            <div class="card-content">
-                                <span>Camisa ALG correntes</span>
-                                <p>R$69,90</p>
-                            </div>
-                        </div>
-
-                        <div class="pro-card">
-                            <img src={imgcamisa}/>
-                            <div class="card-content">
-                                <span>Camisa ALG correntes</span>
-                                <p>R$69,90</p>
-                            </div>
-                        </div>
-
-                        <div class="pro-card">
-                            <img src={imgcamisa}/>
-                            <div class="card-content">
-                                <span>Camisa ALG correntes</span>
-                                <p>R$69,90</p>
-                            </div>
-                        </div>
-
-                        <div class="pro-card">
-                            <img src={imgcamisa}/>
-                            <div class="card-content">
-                                <span>Camisa ALG correntes</span>
-                                <p>R$69,90</p>
-                            </div>
-                        </div>
-
-
-
-                        
-
-                  
+                    
                     </div>
 
         </div>
