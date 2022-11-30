@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    /* display: flex; */
+    
+}
+
+.container {
+    /* align-items: center;
+    justify-content: center; */
+    height: 100vh;
+}   
+
+.title {
+    font-size: 24px;
+    color: #D8C4E5;
+    font-family: 'Conthrax Regular';
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 32px;
+}
+.btnperfil {
+    color: #fff;
+    background: transparent;
+    padding: 24px 32px;
+    font-family:'Conthrax Regular';
+    border: 1.5px solid #fff;
+    cursor: pointer;
+    transition: all 700ms ease;
+    font-size: 20px;
+}
+

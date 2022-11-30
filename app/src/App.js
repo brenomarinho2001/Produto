@@ -11,6 +11,8 @@ import DetalheProduto from '../src/Components/Pages/DetalheProduto/DetalheProdut
 import Carrinho from './Components/Pages/Carinho/Carrinho';
 import Pagamento from './Components/Pages/Pagamento/Pagamento';
 import Finalizar from './Components/Pages/Finalizar/Finalizar';
+import Perfil from './Components/Pages/Perfil/Perfil'
+import Sobre from './Components/Pages/Sobre/Sobre'
 
 import { useState } from 'react';
 
@@ -37,13 +39,15 @@ function App() {
       <Routes>
         <Route path="/Home" element={<Home/>}></Route>
         <Route path="/DetalheProduto" element={<DetalheProduto/>}></Route>
-        <Route path="/" element={<Login/>}></Route>
+        <Route path="/Perfil" element={<Perfil/>}></Route>
         <Route path="/Cadastro" element={<Cadastro/>}></Route>
         <Route path="/Login" element={<Login/>}></Route>
         <Route path="/Produtos"element={<ProdutosLista valor_carrinho={aumentar_carrinho} add_vetor = {adicionar_no_vetor} vetor={vetor}/>}></Route>
         <Route path="/Carrinho" element={<Carrinho valor={valor} vetor={vetor}/>}></Route>
         <Route path="/Pagamento" element={<Pagamento/>}></Route>
         <Route path="/Finalizar" element={<Finalizar/>}></Route>
+        <Route path="/Sobre" element={<Sobre/>}></Route>
+
       </Routes>
     </BrowserRouter>
     </div>
