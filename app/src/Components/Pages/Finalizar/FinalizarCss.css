@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #fff;
+}
+.progress{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    color:#D8C4E5;
+}
+.progress h2{
+    margin-left: 35px;
+}
+.progress .progress-bar span{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.bar{
+    width: 100%;
+    height: 2px;
+    background-color: #321F52;
+    position: relative;
+}
+.bar .cor{
+    width: 100%;
+    height: 5px;
+    background-color: #492C79;
+    position: absolute;
+    left: 0;
+    top: -50%;
+}
+.final-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+}
+.final-body .pedido{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.pedido h2{
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.pedido span{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    
+}
+
+
+.pedido .pedido-box{
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(73, 44, 121, 0.49);
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: left;
+}
+.pedido-box .pedido-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+.pedido-box .pedido-card{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 45%;
+}
+.pedido-box .pedido-card img{
+    background-color: #321F52;
+    height: 150px;
+    width: 150px;
+    padding: 15px;
+}
+.pedido-box .pedido-card .card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.pedido-box .pedido-card .card-content p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.pedido-box .pedido-card .card-content .div-box{
+    border: 2px solid #fff;
+    padding: 10px;
+    margin-left: 30px;
+    text-align: center;
+    width: 50%;
+    font-weight: bold;
+}
+.pedido .pedido-detalhes{
+    margin: 20px;
+    width: 70%;
+}
+.pedido .pedido-detalhes .detalhes{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 20px;
+}
+.pedido .pedido-detalhes .detalhes.total{
+    font-weight: bold;
+    margin-top: 30px;
+}
+.pedido .pedido-entrega{
+    margin: 30px;
+    font-size: 20px;
+}
+.quemviu{
+    margin-left: 60px;
+}
+.recomendacao{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+}
+.recomendacao .rec-card{
+    width: 310px;
+    height: 397px;
+    margin: 10px;
+    background: linear-gradient(49deg, rgba(0,0,0,0.2) 0%, rgba(50,31,82,1) 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.recomendacao .rec-card img{
+    margin-bottom: 40px;
+}
+.recomendacao .rec-card .card-content{
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #D8C4E5;
+    width: 70%;
+}
+.recomendacao .rec-card .card-content p{
+    word-spacing: 7px;
+    margin: 5px;
+}

@@ -14,10 +14,13 @@ header{
 }
 header ul{
     list-style: none;
+    
 }
 header ul li{
     float: left;
-    margin: 15px;
+    
+    margin: 20px;
+    color: white;
 }
 header ul li a{
     text-decoration: none;

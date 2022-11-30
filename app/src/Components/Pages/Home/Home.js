@@ -2,6 +2,7 @@ import Header from "../../Basics/Header/Header";
 import Footers from "../../Basics/Footer/Footers";
 import './Home.css'
 import imgcamisa from '../../images/Roupas/camisa.png'
+import { Link } from "react-router-dom";
 
 export default function Home () {
     return (
@@ -13,8 +14,8 @@ export default function Home () {
 
                 <h3 className='titulo-banner'>Sua Roupa Digital  está aqui</h3>
                 <div className='botoes'>
-                <a href="/Produtos" class="botao_produtos">Produtos</a>
-                <a href="/Login" class="botao_saiba">Saiba Mais</a>
+                <Link to="/Produtos" class="botao_produtos">Produtos</Link>
+                <Link to="/Login" class="botao_saiba">Saiba Mais</Link>
 
                 </div>
 
