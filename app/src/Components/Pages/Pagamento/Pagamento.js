@@ -4,7 +4,7 @@
 // import Footers from "../../Basics/Footer/Footers";
 
 import Footers from '../../Basics/Footer/Footers'
-import Header from '../../Basics/Header/Header'
+import Header from '../../Basics/Header_logada/Header_logada'
 import './PagamentoCss.css'
 
 import { Link } from 'react-router-dom'

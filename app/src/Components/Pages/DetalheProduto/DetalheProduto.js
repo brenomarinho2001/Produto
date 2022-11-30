@@ -1,6 +1,6 @@
 
 
-import Header from "../../Basics/Header/Header";
+import Header from '../../Basics/Header_logada/Header_logada'
 import Footers from "../../Basics/Footer/Footers";
 import SelectSize from './components/SelectSize';
 import Favorite from './components/Favorite';
