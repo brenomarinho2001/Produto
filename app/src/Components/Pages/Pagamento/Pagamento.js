@@ -7,6 +7,8 @@ import Footers from '../../Basics/Footer/Footers'
 import Header from '../../Basics/Header/Header'
 import './PagamentoCss.css'
 
+import { Link } from 'react-router-dom'
+
 export default function Pagamento() {
     return (
         <div> 
@@ -48,7 +50,7 @@ export default function Pagamento() {
 
                     </div>
 
-                    <a href='/Finalizar'><button>Finalize Sua Compra</button></a>
+                    <Link to='/Finalizar'><button>Finalize Sua Compra</button></Link>
                     
                     
 

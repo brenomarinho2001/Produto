@@ -6,8 +6,12 @@
 import Footers from '../../Basics/Footer/Footers'
 import Header from '../../Basics/Header/Header'
 import './CarrinhoCss.css'
+import Item from './Item'
 
-export default function Carrinho() {
+export default function Carrinho({valor,vetor}) {
+
+    
+
     return (
         <div>
             <Header/>
@@ -25,75 +29,16 @@ export default function Carrinho() {
         </div>
         <div class="car-body">
             <div class="car-cards">
-                <div class="card">
-                    <div class="card-img">
-                        <img src="img/image 18.png" alt=""/>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-title">
-                            <span>Camisa ALG Correntes</span>
-                            <span>R$ 40,00</span>
-                        </div>
-                        <div class="card-desc">
-                            <div class="desc">Digital</div>
-                            <div class="desc">01</div>
-                        </div>
-                        <div class="delete"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="img/image 18.png" alt=""/>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-title">
-                            <span>Camisa ALG Correntes</span>
-                            <span>R$ 40,00</span>
-                        </div>
-                        <div class="card-desc">
-                            <div class="desc">Digital</div>
-                            <div class="desc">01</div>
-                        </div>
-                        <div class="delete"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="img/image 18.png" alt=""/>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-title">
-                            <span>Camisa ALG Correntes</span>
-                            <span>R$ 40,00</span>
-                        </div>
-                        <div class="card-desc">
-                            <div class="desc">Digital</div>
-                            <div class="desc">01</div>
-                        </div>
-                        <div class="delete"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="img/image 18.png" alt=""/>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-title">
-                            <span>Camisa ALG Correntes</span>
-                            <span>R$ 40,00</span>
-                        </div>
-                        <div class="card-desc">
-                            <div class="desc">Digital</div>
-                            <div class="desc">01</div>
-                        </div>
-                        <div class="delete"></div>
-                    </div>
-                </div>
+                {
+                    vetor.map((nomes,i) => <Item key={i} nome={nomes[0].nome} preco={nomes[0].preco}/>)
+                }
+                
+                
             </div>
             <div class="car-pay">
                 <div class="pay-tittle">
                     <h2>Subtotal</h2>
-                    <span>R$00,00</span>
+                    <span>R${valor}</span>
                 </div>
                 <div class="entrega">
                     <h2>Calcular entrega</h2>

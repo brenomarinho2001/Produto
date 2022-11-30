@@ -12,8 +12,25 @@ import Carrinho from './Components/Pages/Carinho/Carrinho';
 import Pagamento from './Components/Pages/Pagamento/Pagamento';
 import Finalizar from './Components/Pages/Finalizar/Finalizar';
 
+import { useState } from 'react';
 
 function App() {
+
+  const [valor,setValor] = useState(0)
+
+  const [vetor,setVetor] = useState([])
+
+  function aumentar_carrinho(v){
+    setValor(valor+v)
+  }
+
+  function adicionar_no_vetor(a){
+    var adicionar = vetor
+    adicionar.push(a)
+    setVetor(adicionar)
+    console.log(vetor)
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -23,8 +40,8 @@ function App() {
         <Route path="/" element={<Login/>}></Route>
         <Route path="/Cadastro" element={<Cadastro/>}></Route>
         <Route path="/Login" element={<Login/>}></Route>
-        <Route path="/Produtos" element={<ProdutosLista/>}></Route>
-        <Route path="/Carrinho" element={<Carrinho/>}></Route>
+        <Route path="/Produtos"element={<ProdutosLista valor_carrinho={aumentar_carrinho} add_vetor = {adicionar_no_vetor} vetor={vetor}/>}></Route>
+        <Route path="/Carrinho" element={<Carrinho valor={valor} vetor={vetor}/>}></Route>
         <Route path="/Pagamento" element={<Pagamento/>}></Route>
         <Route path="/Finalizar" element={<Finalizar/>}></Route>
       </Routes>

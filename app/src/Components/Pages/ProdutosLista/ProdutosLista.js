@@ -3,35 +3,50 @@ import Header from '../../Basics/Header/Header'
 import './ProdutosListaCss.css'
 import imgcamisa from '../../images/Roupas/camisa.png'
 
+import { useState } from 'react'
+
+
 import { FaUser } from "react-icons/fa";
 import { AiFillLock } from "react-icons/ai";
+import { Link } from 'react-router-dom'
 
 
-export default function ProdutosLista(){
+export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
 
 
     var produtos_no_carrinhos = []
 
+    const [valores,setValores] = useState(0)
+
+
+
     function adicionar_produto_01(){
         
+        
         var produto_01 = {
+            'id':1,
             'nome':'Camisa_01',
-            'preco':10.00
+            'preco':50
         }
         produtos_no_carrinhos.push(produto_01)
-        console.log(produtos_no_carrinhos)
+        add_vetor(produtos_no_carrinhos)
+        setValores(valores + produto_01.preco)
+        valor_carrinho(produto_01.preco)
 
     }
+    
 
     function adicionar_produto_02(){
         
         var produto_02 = {
+            'id':2,
             'nome':'Camisa_02',
-            'preco':30.00
+            'preco':70.00
         }
         produtos_no_carrinhos.push(produto_02)
-        console.log(produtos_no_carrinhos)
-
+        setValores(valores + produto_02.preco)
+        add_vetor(produtos_no_carrinhos)
+        valor_carrinho(produto_02.preco)
     }
 
 
@@ -112,7 +127,7 @@ export default function ProdutosLista(){
                             <img src={imgcamisa}/>
                             <div class="card-content">
                                 <span>Camisa ALG correntes</span>
-                                <p>R$69,90</p>
+                                <p>R$50,00</p>
                                 <button onClick={adicionar_produto_01}>Adicionar ao Carrinho</button>
                             </div>
                             
@@ -122,8 +137,9 @@ export default function ProdutosLista(){
                             <img src={imgcamisa}/>
                             <div class="card-content">
                                 <span>Camisa ALG correntes</span>
-                                <p>R$69,90</p>
+                                <p>R$70,00</p>
                                 <button onClick={adicionar_produto_02}>Adicionar ao Carrinho</button>
+                                <p>{valor}</p>
                             </div>
                             
                         </div>
