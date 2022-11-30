@@ -26,8 +26,8 @@ export default function Header(){
             
         </ul>
         <div class="nav-buttons" style={{padding:'30px'}}>
-            <BsBag class='icon' />
-            <BsSearch class='icon' />
+            <a href='/Carrinho'><BsBag class='icon'></BsBag></a>
+            <a href='/'><BsSearch class='icon' /></a>
 
             <a href="/Login" class="login-btn">Login</a>
             <a href="/Cadastro" class="cad-btn">Cadastre agora</a>
