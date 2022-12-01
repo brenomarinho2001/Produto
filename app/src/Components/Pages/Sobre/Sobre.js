@@ -3,10 +3,10 @@ import Footers from "../../Basics/Footer/Footers";
 
 import './Sobre.css'
 
-export default function Sobre () {
+export default function Sobre() {
     return (
         <div className="container">
-            <Header/>
+            
                 <div className='content'>
                 <h3 className='titlepag'> Sobre a verter </h3>
 
@@ -39,7 +39,7 @@ export default function Sobre () {
                 </div>
                 
             </div>
-            <Footers/>
+            
         </div>
     )
 }

@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    /* display: flex; */
+    
+}
+
+.container {
+    /* align-items: center;
+    justify-content: center; */
+    height: 100vh;
+}   
+
+.content {
+    display: flex;
+    margin-left: 90px;
+    margin-top: 72px;
+    justify-content:flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+}
+
+.productinfo {
+    justify-self: flex-start;
+    max-width: 500px;
+    width: 100%;
+}
+
+.titlecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+    width: 100%;
+}
+
+.title {
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Conthrax Regular';
+}
+
+.favicon {
+    color: #fff;
+    cursor: pointer;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Conthrax Regular';
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.buttoncontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.buttontam {
+    color: #fff;
+    background: transparent;
+    padding: 8px 20px;
+    font-family: 'Source Sans Pro';
+    border: 1.5px solid #fff;
+    cursor: pointer;
+    transition: all 700ms ease;
+    font-size: 13px;
+}
+
+.buttontam.selected {
+    background: #fff !important;
+    color: #0C0B10 !important;
+}
+
+.textbutton {
+    color: #fff;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    margin-top: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.subtitle2 {
+    font-size: 16px;
+    color: #D8C4E5;
+    font-family: 'Conthrax Regular';
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.inputCep {
+    color: #fff;
+    background-color: transparent;
+    padding: 8px;
+    border-color: white;
+    width: 162px;
+}
+
+.cepcontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.buttoncalc {
+    color: #0C0B10;
+    border: transparent;
+    background: #fff;
+    padding: 8px 25px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+}
+
+.buttoncomprar {
+    color: #fff;
+    border: transparent;
+    background: #492C79;
+    padding: 10px 24px;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-family: 'Source Sans Pro';
+}
+
+.buttonadic {
+    color: #fff;
+    background: transparent;
+    padding: 10px 24px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 700ms ease;
+
+    font-size: 16px;
+    font-family: 'Source Sans Pro';
+}
+
+.subtitle3 {
+    margin-top: 124px;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Conthrax Regular';
+    font-weight: lighter;
+}
+
+.text {
+    padding-right: 90px;
+    margin-top: 56px;
+    font-size: 20px;
+    color: #D8C4E5;
+    font-family: 'Source Sans Pro';
+    font-weight: lighter;
+}
+
+.imgqr {
+    margin-top: 8px;
+    width: 280px;
+}
+
+.paymentcontainer {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.imagecontainer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagemock {
+    background-color: #D8C4E5;
+    background: linear-gradient(16.28deg, #000000 -41.06%, #321f52 72.61%);
+    height: 460px;
+    max-width: 536px;
+    width: 100%;
+}
+
+.imageslider {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    overflow-x: auto;
+    margin-top: 16px;
+    max-width: 536px;
+    width: 100%;
+}
+
+.imageslider .imagemock {
+    cursor: pointer;
+    flex-shrink: 0;
+    height: 122px !important;
+    width: 122px !important;
+}
+
+@media only screen and (max-width: 800px) {
+    .product {
+        flex-direction: column-reverse;
+    }
+
+    .productinfo, .imagemock, .imageslider {
+        max-width: 100%;
+    }
+}

@@ -31,7 +31,7 @@ export default function Cadastro(){
     return(
         <div style={{height:'100vh',backgroundColor:'black',color:'white'}}>
 
-            <Header style={{height:'20%'}}/>
+            
             
                 <section class="login" style={{height:'85%',width:'100%',display:'flex',flexDirection:'column',justifyContent:'center'}}>
                     <div style={{height:'10%',textAlign:'left',display:'flex',alignItems:'center',width:'95%'}} className="boxCadastro">
@@ -96,7 +96,7 @@ export default function Cadastro(){
                     </div>
                 </section>
 
-            <Footers/>
+            
 
         </div>
     )

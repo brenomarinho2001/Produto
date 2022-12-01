@@ -3,24 +3,44 @@ import Footers from "../../Basics/Footer/Footers";
 import './Home.css'
 import imgcamisa from '../../images/Roupas/camisa.png'
 import { Link } from "react-router-dom";
+import { Zoom } from "react-slideshow-image";
+
+import banner_01 from '../../images/banners/banner1.png'
+import banner_02 from '../../images/banners/banner2.png'
+import banner_03 from '../../images/banners/banner 3-final.png'
+
 
 export default function Home () {
+    const images = [banner_01, banner_02, banner_03];
+
+    const zoomOutProperties = {
+      duration: 5000,
+      transitionDuration: 500,
+      infinite: true,
+      indicators: true,
+      scale: 0.4,
+      arrows: true
+    };
+    
+    const Slideshow = () => {
+      return (
+        <div className="slide-container">
+          <Zoom {...zoomOutProperties}>
+            {images.map((each, index) => (
+              <img key={index} style={{ width: "100%" }} src={each} />
+            ))}
+          </Zoom>
+        </div>
+      );
+    };
+
     return (
         <div className='container'> 
-
-            <div className='banner-todo'>
-            <Header style={{height:'20%'}}/>
+        
             <div className='banners'>
-
-                <h3 className='titulo-banner'>Sua Roupa Digital  está aqui</h3>
-                <div className='botoes'>
-                <Link to="/Produtos" class="botao_produtos">Produtos</Link>
-                <Link to="/Login" class="botao_saiba">Saiba Mais</Link>
-
-                </div>
-
+            <Slideshow />
             </div>
-            </div>
+
             <div className='lancamentos'>
                 <h3 className='tituolo-sessao'>ultímos lançamentos </h3>
                 <div class="produtos">
@@ -103,7 +123,7 @@ export default function Home () {
 
                 </div>
             </div>
-            <Footers/>
+            
         </div>
         
     )

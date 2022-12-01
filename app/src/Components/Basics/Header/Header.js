@@ -4,12 +4,14 @@ import './HeaderCss.css'
 import { BsBag } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 import { Link } from 'react-router-dom'
+import rochelle from '../../images/rochelle.png'
 
 //IMAGEM LOGO
 import logo from '../../Resources/logoverter.png';
 
-export default function Header(){
+export default function Header({log}){
 
+    console.log(log)
     return(
         <header >
             
@@ -18,21 +20,35 @@ export default function Header(){
 
                 <Link to="/Home" class='texto' style={{fontSize:'15px'}}><li >ini­cio</li></Link>
                 <Link to="/Produtos" class='texto' style={{fontSize:'15px'}}><li >Produtos</li></Link>
-                {/* isso nao eh p ficar assim, coloquei so p gente conseguir ver a pagina de detalhe do produto */}
-
-                <Link to="/Home" class='texto' style={{fontSize:'15px'}}><li >Sobre a Verter</li></Link>
-                <Link to="/Home" class='texto' style={{fontSize:'15px'}}><li >Contato</li></Link>
+                <Link to="/Sobre" class='texto' style={{fontSize:'15px'}}><li >Sobre a Verter</li></Link>
+                <a href="https://www.instagram.com/verter.co/" class='texto' style={{fontSize:'15px'}}><li >Contato</li></a>
    
 
             
             
         </ul>
         <div class="nav-buttons" style={{padding:'30px'}}>
-            <Link to='/Carrinho'><BsBag class='icon'></BsBag></Link>
+            {log ? (
+                <Link to='/Carrinho'><BsBag class='icon'></BsBag></Link>
+            ) : (
+                <BsBag class='icon'></BsBag>
+            )}
             <a href='/'><BsSearch class='icon' /></a>
 
-            <a href="/Login" class="login-btn">Login</a>
-            <a href="/Cadastro" class="cad-btn">Cadastre agora</a>
+            {log ? (
+                <div className='perfil'> 
+                <img src={rochelle} className='foto'/> 
+                <Link to='Perfil' className='texto-perfil'><h3>Olá, Rochelle </h3></Link>
+                </div>
+
+            ) : (
+                <div>
+                <a href="/Login" class="login-btn">Login</a>
+                <a href="/Cadastro" class="cad-btn">Cadastre agora</a>
+                </div>
+            )}
+
+            
         </div>
         </header>
     )

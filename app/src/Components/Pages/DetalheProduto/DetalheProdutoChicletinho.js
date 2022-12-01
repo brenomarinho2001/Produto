@@ -4,7 +4,7 @@ import Header from '../../Basics/Header_logada/Header_logada'
 import Footers from "../../Basics/Footer/Footers";
 import SelectSize from './components/SelectSize';
 import Favorite from './components/Favorite';
-import './DetalheProduto.css'
+import './DetalheProdutoChicletinho.css'
 
 import qrcode from '../../images/qrcode.png';
 import pix from '../../images/pix.png';
@@ -13,12 +13,12 @@ import pagseguro from '../../images/pagseguro.png';
 export default function DetalheProduto () {
     return (
         <div className='container'> 
-            <Header style={{height:'20%'}}/>
+            
             <div className='content'>
                 <div className='product'>
                     <div className='productinfo'>
                         <div className='titlecontainer'>
-                            <h1 className='title'>Lorem Ipsum</h1>
+                            <h1 className='title'>CHICLETINHO</h1>
                             <Favorite />
                         </div>
 
@@ -70,7 +70,7 @@ export default function DetalheProduto () {
 
                 <h3 className='subtitle3'> Quem viu comprou </h3>
             </div>
-            <Footers/>
+           
         </div>
     )
 }

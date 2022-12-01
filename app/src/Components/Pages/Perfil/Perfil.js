@@ -7,13 +7,13 @@ import './Perfil.css'
 export default function Perfil () {
     return (
         <div className="container">
-            <Header/>
+            
                 <div className="content">
                     <h3 className="title"> Meu perfil </h3>
                     <div className="buttons">
-                        <button className="btnperfil"> 
+                        <a className="btnperfil" href='/Perfil/MeusDados'> 
                         meus dados
-                        </button>
+                        </a>
 
                         <button className="btnperfil"> 
                         pedidos
@@ -36,7 +36,7 @@ export default function Perfil () {
                     </div>
                     
                 </div>
-            <Footers/>
+            
         </div>
     )
 }
