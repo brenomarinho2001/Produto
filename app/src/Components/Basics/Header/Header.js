@@ -43,8 +43,8 @@ export default function Header({log}){
 
             ) : (
                 <div>
-                <a href="/Login" class="login-btn">Login</a>
-                <a href="/Cadastro" class="cad-btn">Cadastre agora</a>
+                <Link to="/Login" class="login-btn">Login</Link>
+                <Link to="/Cadastro" class="cad-btn">Cadastre agora</Link>
                 </div>
             )}
 
