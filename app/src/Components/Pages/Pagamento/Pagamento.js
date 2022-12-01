@@ -9,7 +9,12 @@ import './PagamentoCss.css'
 
 import { Form, Link } from 'react-router-dom'
 
-export default function Pagamento() {
+export default function Pagamento({clear}) {
+
+    function limpar(){
+        clear()
+    }
+
     return (
         <div> 
            
@@ -62,7 +67,7 @@ export default function Pagamento() {
                     </div>
 
 
-                    <Link to='/Finalizar'><button class='box' style={{width:'400px',height:'45px',backgroundColor:'#33BF5A',color:'white',cursor:'pointer',textAlign:'center'}}>Finalize Sua Compra</button></Link>
+                    <Link to='/Finalizar'><button class='box' onClick={limpar} style={{width:'400px',height:'45px',backgroundColor:'#33BF5A',color:'white',cursor:'pointer',textAlign:'center'}}>Finalize Sua Compra</button></Link>
 
                     
 

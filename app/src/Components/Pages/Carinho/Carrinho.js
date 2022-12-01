@@ -74,9 +74,9 @@ export default function Carrinho({valor,vetor,log}) {
                     <span>Total</span>
                     <span>R$00,00</span>
                 </div>
-                <button class="compra-btn">Finalizar Compra</button>
+                <Link to='/Produtos'><button class="compra-btn">Continuar Comprando</button></Link>
                 {log ? (
-                    <Link to='/Pagamento'><button class="continuar-btn">Continuar Comprando</button></Link>
+                    <Link to='/Pagamento'><button class="continuar-btn">Finalizar</button></Link>
                  ) : (
                     <button class="continuar-btn">Continuar Comprando</button>
                  )}   

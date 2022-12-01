@@ -63,6 +63,11 @@ function App() {
     console.log(vetor)
   }
 
+  function clear(){
+    setVetor([])
+  }
+
+
   return (
     <div className="App">
       
@@ -78,8 +83,8 @@ function App() {
         <Route path="/Login" element={<Login a={autenticar}/>}></Route>
         <Route path="/Produtos"element={<ProdutosLista valor_carrinho={aumentar_carrinho} add_vetor = {adicionar_no_vetor} vetor={vetor}/>}></Route>
         <Route path="/Carrinho" element={<Carrinho valor={valor} vetor={vetor} log={logado}/>}></Route>
-        <Route path="/Pagamento" element={<Pagamento/>}></Route>
-        <Route path="/Finalizar" element={<Finalizar/>}></Route>
+        <Route path="/Pagamento" element={<Pagamento />}></Route>
+        <Route path="/Finalizar" element={<Finalizar vetor={vetor} clear={clear}/>}></Route>
         <Route path="/Sobre" element={<Sobre/>}></Route>
         <Route path="/Perfil" element={<Perfil/>}></Route>
         <Route path="/Sobre" element={<Sobre/>}></Route>

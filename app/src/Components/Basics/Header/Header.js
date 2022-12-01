@@ -27,7 +27,11 @@ export default function Header({log}){
             
         </ul>
         <div class="nav-buttons" style={{padding:'30px'}}>
-            <Link to='/Carrinho'><BsBag class='icon'></BsBag></Link>
+            {log ? (
+                <Link to='/Carrinho'><BsBag class='icon'></BsBag></Link>
+            ) : (
+                <BsBag class='icon'></BsBag>
+            )}
             <a href='/'><BsSearch class='icon' /></a>
 
             {log ? (
