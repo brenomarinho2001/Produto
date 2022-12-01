@@ -1,0 +1,98 @@
+.linha {
+    width: 100%;
+    border: 1px solid #492C79;
+}
+
+.titulo {
+    text-align: left;
+    padding: 15px 40px;
+    font-size: 24px;
+    color: #D8C4E5;
+    font-family: 'Conthrax Regular';
+}
+
+.pedidoss {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    font-family: 'minhasource';
+}
+
+.pedido_01 {
+
+    width: 70%;
+    height: 350px;
+    border: solid 2px #FFFF;
+    align-content: space-around;
+    display: flex;
+}
+
+.direita {
+    text-align: left;
+    padding: 25px;
+
+}
+
+@font-face {
+    font-family: 'minhasource';
+    src: url('../../Fonts/SourceSansPro-SemiBold.ttf');
+}
+
+.pedidoss img {
+    padding-top: 45px;
+}
+
+.d_partedebaixo{
+    display: flex;
+}
+
+.texto_d{
+    padding-left: 15px;
+}
+
+
+
+.d_partedebaixo h3{
+    font-family: 'Conthrax Regular';
+    padding-bottom: 4px;
+    font-size: 25px;
+}
+.texto_pd .texto_pe{
+    font-size: 15px;
+}
+.texto_d h4, h5{
+    font-family: 'minhasource';
+    font-size: 17px;
+    padding-top: 4px;
+}
+
+.estado_p{
+    display: flex;
+    align-items: center;
+
+}
+
+.circulo{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.texto_pe{
+    text-align: right;
+}
+
+.esquerda{
+    align-items: flex-end;
+    padding: 25px;
+    width: 360px;
+}
+
+.esquerda h3{
+    text-align: right;
+    align-items: center;
+}
+

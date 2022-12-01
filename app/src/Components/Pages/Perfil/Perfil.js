@@ -3,6 +3,7 @@ import Footers from "../../Basics/Footer/Footers";
 import { IoStarOutline } from "react-icons/io5";
 
 import './Perfil.css'
+import { Link } from "react-router-dom";
 
 export default function Perfil () {
     return (
@@ -12,13 +13,12 @@ export default function Perfil () {
                 <div className="content">
 
                     <div className="buttons">
-                        <a className="btnperfil" href='/Perfil/MeusDados'> 
+                        <Link className="btnperfil" to={'/Perfil/MeusDados'}> 
                         meus dados
-                        </a>
+                        </Link>
 
-                        <button className="btnperfil"> 
-                        pedidos
-                        </button>
+                        <Link to={'/Perfil/Pedidos'} className='btnperfil'>pedidos</Link>
+
 
                         <button className="btnperfil"> 
                         pagamentos

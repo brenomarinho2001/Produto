@@ -17,6 +17,7 @@ import Finalizar from './Components/Pages/Finalizar/Finalizar';
 import Perfil from './Components/Pages/Perfil/Perfil'
 import Sobre from './Components/Pages/Sobre/Sobre'
 import MeusDados from './Components/Pages/MeusDados/Meusdados';
+import Pedidos from './Components/Pages/Pedidos/Pedidos';
 
 import { useState } from 'react';
 import Header from './Components/Basics/Header/Header'
@@ -96,6 +97,7 @@ function App() {
         <Route path="/Perfil" element={<Perfil/>}></Route>
         <Route path="/Sobre" element={<Sobre/>}></Route>
         <Route path="/Perfil/MeusDados" element={<MeusDados/>}></Route>
+        <Route path="/Perfil/Pedidos" element={<Pedidos/>}></Route>
 
 
       </Routes>
