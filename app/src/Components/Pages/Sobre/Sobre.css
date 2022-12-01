@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
 }  
 
 .content {
@@ -19,14 +19,13 @@ body {
     margin-top: 72px;
     justify-content:flex-start;
     text-align: left;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 
 .containertext {
     display: flex;
     flex-direction:column;
     gap: 24px;
-    width: 100%;
 }
 
 .titlepag {
@@ -47,8 +46,16 @@ body {
 .text {
     font-family: 'Source Sans Pro';
     font-size: 16px;
+    padding: 0 !important;
     margin-top: 40px;
     color: white;
+}
+
+.hero {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 187px;
+    width: 80%;
 }
 
 .imagecontainer {
@@ -66,8 +73,13 @@ body {
 }
 
 .snap {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
 }
 
 .buttonsnap {
@@ -90,5 +102,10 @@ body {
 }
 
 .video {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.video > video {
     width: 100%;
 }

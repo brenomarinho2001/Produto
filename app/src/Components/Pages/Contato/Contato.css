@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,16 +11,23 @@ body {
 }
 
 .container {
-    height: 100vh;
+    margin: 0 auto;
+    width: 80%;
+    min-height: 100vh;
 }  
 
 .content {
+    align-items: flex-end;
     display: flex;
-    margin-left: 90px;
     margin-top: 72px;
     justify-content:flex-start;
     text-align: left;
     flex-direction: column;
+    max-width: 100%;
+}
+
+.content > div {
+    width: 100%;
 }
 
 .titlepag {
@@ -55,6 +63,8 @@ body {
     transition: all 700ms ease;
     font-size: 13px;
     padding: 16px 64px;
+    border: 0;
+    width: 240px;
 }
 
 .inputsCadastro {
@@ -77,10 +87,39 @@ body {
     color: #fff;
     background-color: transparent;
     height: 137px;
-    width: 80%;
+    width: 100%;
     margin-bottom: 20px;
 
     border-radius: 2px;
     padding-left: 10px;
     border-color: white;
+}
+
+.fileSelect {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.fileSelect .inputsCadastro {
+    margin-bottom: 0 !important;
+}
+
+.fileSelect > div {
+    width: 100%;
+}
+
+.fileSelect > button {
+    padding: 0 !important;
+    height: 40px !important;
+}
+
+.inputRow {
+    display: flex;
+    gap: 24px;
+}
+
+.inputRow > div {
+    width: 100%;
 }

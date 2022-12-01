@@ -1,6 +1,6 @@
 import Header from "../../Basics/Header_logada/Header_logada";
 import Footers from "../../Basics/Footer/Footers";
-import { IoStarOutline } from "react-icons/io5";
+
 
 import './Perfil.css'
 import { Link } from "react-router-dom";
@@ -19,19 +19,11 @@ export default function Perfil () {
 
                         <Link to={'/Perfil/Pedidos'} className='btnperfil'>pedidos</Link>
 
+                        <Link to={'/Perfil/Pagamentos'} className='btnperfil'>pagamentos</Link>
 
-                        <button className="btnperfil"> 
-                        pagamentos
-                        </button>
+                        <Link to={'/Perfil/Enderecos'} className='btnperfil'>endereços</Link>
 
-                        <button className="btnperfil"> 
-                        endereços
-                        </button>
-
-                        <button className="btnperfil"> 
-                        <IoStarOutline style={{size: 41, marginRight: 8}}/>
-                        favoritos
-                        </button>
+                        <Link to={'/Perfil/Favoritos'} className='btnperfil'>favoritos</Link>
 
 
                     </div>
