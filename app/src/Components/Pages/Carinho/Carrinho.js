@@ -5,7 +5,7 @@
 
 import { Link } from 'react-router-dom'
 import Footers from '../../Basics/Footer/Footers'
-import Header from '../../Basics/Header/Header'
+import Header from '../../Basics/Header_logada/Header_logada'
 import './CarrinhoCss.css'
 import Item from './Item'
 

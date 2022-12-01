@@ -1,4 +1,4 @@
-import Header from "../../Basics/Header/Header";
+import Header from "../../Basics/Header_logada/Header_logada";
 import Footers from "../../Basics/Footer/Footers";
 import { IoStarOutline } from "react-icons/io5";
 

@@ -1,4 +1,4 @@
-import Header from "../../Basics/Header/Header";
+import Header from '../../Basics/Header_logada/Header_logada'
 import Footers from "../../Basics/Footer/Footers";
 import './Home.css'
 import imgcamisa from '../../images/Roupas/camisa.png'
