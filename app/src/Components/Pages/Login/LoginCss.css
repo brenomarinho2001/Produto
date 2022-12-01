@@ -95,6 +95,7 @@
     margin-top: 10px;
     cursor: pointer;
     transition: all 700ms ease;
+    width:100%
 }
 .login-box .login-buttons .btn-cad:hover{
     color: #000;

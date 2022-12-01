@@ -7,12 +7,14 @@ import Footers from '../../Basics/Footer/Footers'
 import Header from '../../Basics/Header/Header'
 import './CarrinhoCss.css'
 
-export default function Item({nome,preco}) {
+import imgcamisa from '../../images/Roupas/camisa.png'
+
+export default function Item({id,nome,preco}) {
     return (
        
     <div class="card">
         <div class="card-img">
-            <img src="img/image 18.png" alt=""/>
+            <img src={imgcamisa}/>
         </div>
         <div class="card-body">
             <div class="card-title">

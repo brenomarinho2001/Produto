@@ -7,7 +7,7 @@ import './Perfil.css'
 export default function Perfil () {
     return (
         <div className="container">
-            <Header/>
+            
                 <div className="content">
                     <h3 className="title"> Meu perfil </h3>
                     <div className="buttons">
@@ -36,7 +36,7 @@ export default function Perfil () {
                     </div>
                     
                 </div>
-            <Footers/>
+            
         </div>
     )
 }

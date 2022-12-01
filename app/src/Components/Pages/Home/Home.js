@@ -9,7 +9,7 @@ export default function Home () {
         <div className='container'> 
 
             <div className='banner-todo'>
-            <Header style={{height:'20%'}}/>
+            
             <div className='banners'>
 
                 <h3 className='titulo-banner'>Sua Roupa Digital  está aqui</h3>
@@ -103,7 +103,7 @@ export default function Home () {
 
                 </div>
             </div>
-            <Footers/>
+            
         </div>
         
     )

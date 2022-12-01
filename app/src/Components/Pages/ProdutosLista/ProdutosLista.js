@@ -52,7 +52,7 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
 
     return(
         <>
-        <Header/>
+        
         <div class="back-color"></div>
                 <div class="filtros">
                     <label>Filtrar por</label>
@@ -128,7 +128,7 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
                             <div class="card-content">
                                 <span>Camisa ALG correntes</span>
                                 <p>R$50,00</p>
-                                <button onClick={adicionar_produto_01}>Adicionar ao Carrinho</button>
+                                <button onClick={adicionar_produto_01} style={{backgroundColor:'#492C79',color:'white',cursor:'pointer',padding:'15px'}}>Adicionar ao Carrinho</button>
                             </div>
                             
                         </div>
@@ -138,7 +138,7 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
                             <div class="card-content">
                                 <span>Camisa ALG correntes</span>
                                 <p>R$70,00</p>
-                                <button onClick={adicionar_produto_02}>Adicionar ao Carrinho</button>
+                                <button onClick={adicionar_produto_02} style={{backgroundColor:'#492C79',color:'white',cursor:'pointer',padding:'15px'}}>Adicionar ao Carrinho</button>
                                 <p>{valor}</p>
                             </div>
                             
@@ -148,7 +148,7 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
 
         </div>
         
-        <Footers/>
+        
         </>
         
     )

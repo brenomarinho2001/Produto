@@ -4,23 +4,28 @@
 }
 
 .body{
-    height: 200vh;
-    background-color: red;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .body_center{
-    height: 200vh;
+    
     width: 1000px;
-    background-color: blue;
-    display: flex;
+
     flex-direction: column;
-    justify-content: space-around;
+    align-items: flex-start;
+
 }
+
 
 .box{
     text-align: left;
+    margin: 20px;
 }
 
+.under:hover{
+    cursor: pointer;
+}

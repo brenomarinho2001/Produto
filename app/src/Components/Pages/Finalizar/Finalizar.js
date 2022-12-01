@@ -11,7 +11,7 @@ import './FinalizarCss.css'
 export default function Finalizar() {
     return (
         <div>
-            <Header/>
+            
             <div class="progress">
             <h2>Finalizando</h2>
             <div class="progress-bar">
@@ -93,7 +93,7 @@ export default function Finalizar() {
             </div>
         </div>
     </div>
-    <h2 class="quemviu">Quem viu, comprou</h2>
+    <h2 class="quemviu">Quem viu, comprou:</h2>
     <div class="recomendacao">
         <div class="rec-card">
             <img src="./img/image 18.png" alt=""/>
@@ -132,7 +132,7 @@ export default function Finalizar() {
         </div>
     </div>
        
-        <Footers/>
+        
         </div>
         
     )

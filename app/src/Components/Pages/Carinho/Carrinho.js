@@ -3,19 +3,19 @@
 // import Header from "../../Basics/Header/Header";
 // import Footers from "../../Basics/Footer/Footers";
 
+import { Link } from 'react-router-dom'
 import Footers from '../../Basics/Footer/Footers'
 import Header from '../../Basics/Header/Header'
 import './CarrinhoCss.css'
 import Item from './Item'
 
-export default function Carrinho({valor,vetor}) {
+export default function Carrinho({valor,vetor,log}) {
 
     
 
     return (
         <div>
-            <Header/>
-
+            
         
         <div> 
             <div class="progress">
@@ -38,7 +38,7 @@ export default function Carrinho({valor,vetor}) {
             <div class="car-pay">
                 <div class="pay-tittle">
                     <h2>Subtotal</h2>
-                    <span>R${valor}</span>
+                    <span>R${valor},00</span>
                 </div>
                 <div class="entrega">
                     <h2>Calcular entrega</h2>
@@ -75,7 +75,11 @@ export default function Carrinho({valor,vetor}) {
                     <span>R$00,00</span>
                 </div>
                 <button class="compra-btn">Finalizar Compra</button>
-                <a href='/Pagamento'><button class="continuar-btn">Continuar Comprando</button></a>
+                {log ? (
+                    <Link to='/Pagamento'><button class="continuar-btn">Continuar Comprando</button></Link>
+                 ) : (
+                    <button class="continuar-btn">Continuar Comprando</button>
+                 )}   
             </div>
         </div>
         <h2 class="quemviu">Quem viu comprou</h2>
@@ -117,7 +121,7 @@ export default function Carrinho({valor,vetor}) {
             </div>
         </div>
         </div>
-        <Footers/>
+        
         </div>
     )
 }

@@ -13,7 +13,7 @@ import pagseguro from '../../images/pagseguro.png';
 export default function DetalheProduto () {
     return (
         <div className='container'> 
-            <Header style={{height:'20%'}}/>
+            
             <div className='content'>
                 <div className='product'>
                     <div className='productinfo'>
@@ -70,7 +70,7 @@ export default function DetalheProduto () {
 
                 <h3 className='subtitle3'> Quem viu comprou </h3>
             </div>
-            <Footers/>
+           
         </div>
     )
 }

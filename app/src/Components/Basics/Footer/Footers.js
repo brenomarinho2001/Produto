@@ -64,7 +64,7 @@ export default function Footers(){
 
                     <div style={{display:'flex'}}>
                          <div style={{height:'40px',width:'40px',backgroundColor:'rgba(255,255,255,.3)',display:'flex',alignItems:'center',justifyContent:'center',marginRight:'20px',cursor:'pointer',zIndex:'100'}}>
-                            <GrInstagram style={{fontSize:'30px',color:'white'}}/>
+                            <a href="https://www.instagram.com/verter.co/"><GrInstagram style={{fontSize:'30px',color:'white'}}/></a>
                          </div>
 
                          <div style={{height:'40px',width:'40px',backgroundColor:'rgba(255,255,255,.3)',display:'flex',alignItems:'center',justifyContent:'center',marginRight:'20px',cursor:'pointer',zIndex:'100'}}>
