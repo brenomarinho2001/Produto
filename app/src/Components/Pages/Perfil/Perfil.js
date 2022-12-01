@@ -11,9 +11,9 @@ export default function Perfil () {
                 <div className="content">
                     <h3 className="title"> Meu perfil </h3>
                     <div className="buttons">
-                        <button className="btnperfil"> 
+                        <a className="btnperfil" href='/Perfil/MeusDados'> 
                         meus dados
-                        </button>
+                        </a>
 
                         <button className="btnperfil"> 
                         pedidos

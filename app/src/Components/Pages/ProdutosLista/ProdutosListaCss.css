@@ -145,8 +145,10 @@ aside .categoria ul li{
     font-weight: 700;
 }
 
-.produtos .pro-card .card-content span{
+.titulo{
     font-family: minhafont;
+    text-decoration: none;
+    color: white;
 }
 
 

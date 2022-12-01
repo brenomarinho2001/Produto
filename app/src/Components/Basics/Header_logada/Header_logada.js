@@ -29,7 +29,7 @@ export default function Header(){
             
         </ul>
         <div class="nav-buttons" style={{padding:'40px'}}>
-            <img src={rochelle} className='foto'/> 
+            
             <a href="/Perfil" class="texto">   Olá, Rochelle</a>
         </div>
         </header>

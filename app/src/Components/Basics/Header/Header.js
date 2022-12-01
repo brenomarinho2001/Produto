@@ -4,6 +4,7 @@ import './HeaderCss.css'
 import { BsBag } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 import { Link } from 'react-router-dom'
+import rochelle from '../../images/rochelle.png'
 
 //IMAGEM LOGO
 import logo from '../../Resources/logoverter.png';
@@ -35,7 +36,11 @@ export default function Header({log}){
             <a href='/'><BsSearch class='icon' /></a>
 
             {log ? (
-                <Link to='Perfil'><h3>Bem-Vindo </h3></Link>
+                <div className='perfil'> 
+                <img src={rochelle} className='foto'/> 
+                <Link to='Perfil' className='texto-perfil'><h3>Olá, Rochelle </h3></Link>
+                </div>
+
             ) : (
                 <div>
                 <a href="/Login" class="login-btn">Login</a>

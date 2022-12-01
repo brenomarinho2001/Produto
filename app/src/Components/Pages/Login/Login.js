@@ -63,7 +63,7 @@ export default function Login({a}){
                 <div class="login-buttons">
 
                     
-                    <Link to='/Login' style={{width:'92%'}} ><button onClick={autentic} class="btn-cad">Entrar</button></Link>
+                    <Link to='/Home' style={{width:'92%'}} ><button onClick={autentic} class="btn-cad">Entrar</button></Link>
                     <Link  to='/Cadastro' style={{width:'92%'}}><button class="btn-cad">Cadastre agora</button></Link>
                 </div>
             </div>

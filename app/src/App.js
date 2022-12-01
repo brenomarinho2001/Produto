@@ -7,12 +7,16 @@ import Login from '../src/Components/Pages/Login/Login';
 import Home from '../src/Components/Pages/Home/Home';
 import ProdutosLista from '../src/Components/Pages/ProdutosLista/ProdutosLista';
 //import Footers from '../src/Components/Basics/Footers';
-import DetalheProduto from '../src/Components/Pages/DetalheProduto/DetalheProduto';
+import DPApocaliptica from '../src/Components/Pages/DetalheProduto/DetalheProdutoApocaliotica';
+import DPChicletinho from '../src/Components/Pages/DetalheProduto/DetalheProdutoChicletinho';
+import DPEmo from '../src/Components/Pages/DetalheProduto/DetalheProdutoEmo';
+import DPMorcegona from '../src/Components/Pages/DetalheProduto/DetalheProdutoMorcegona';
 import Carrinho from './Components/Pages/Carinho/Carrinho';
 import Pagamento from './Components/Pages/Pagamento/Pagamento';
 import Finalizar from './Components/Pages/Finalizar/Finalizar';
 import Perfil from './Components/Pages/Perfil/Perfil'
 import Sobre from './Components/Pages/Sobre/Sobre'
+import MeusDados from './Components/Pages/MeusDados/Meusdados';
 
 import { useState } from 'react';
 import Header from './Components/Basics/Header/Header'
@@ -77,17 +81,22 @@ function App() {
         
         <Route path="/" element={<Home/>}></Route>
         <Route path="/Home" element={<Home/>}></Route>
-        <Route path="/DetalheProduto" element={<DetalheProduto/>}></Route>
         <Route path="/Perfil" element={<Perfil/>}></Route>
         <Route path="/Cadastro" element={<Cadastro/>}></Route>
         <Route path="/Login" element={<Login a={autenticar}/>}></Route>
         <Route path="/Produtos"element={<ProdutosLista valor_carrinho={aumentar_carrinho} add_vetor = {adicionar_no_vetor} vetor={vetor}/>}></Route>
+        <Route path='/Detalhe/Apocaliptica' element={<DPApocaliptica/>}></Route>
+        <Route path='/Detalhe/Chicletinho' element={<DPChicletinho/>}></Route>
+        <Route path='/Detalhe/Emo' element={<DPEmo/>}></Route>
+        <Route path='/Detalhe/Morcegona' element={<DPMorcegona/>}></Route>
         <Route path="/Carrinho" element={<Carrinho valor={valor} vetor={vetor} log={logado}/>}></Route>
         <Route path="/Pagamento" element={<Pagamento />}></Route>
         <Route path="/Finalizar" element={<Finalizar vetor={vetor} clear={clear}/>}></Route>
         <Route path="/Sobre" element={<Sobre/>}></Route>
         <Route path="/Perfil" element={<Perfil/>}></Route>
         <Route path="/Sobre" element={<Sobre/>}></Route>
+        <Route path="/Perfil/MeusDados" element={<MeusDados/>}></Route>
+
 
       </Routes>
       <Footers/>

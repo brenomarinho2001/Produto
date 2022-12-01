@@ -162,7 +162,7 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
                         <div class="pro-card">
                             <img src={imgcamisa}/>
                             <div class="card-content">
-                                <span>APOCALIPTICA</span>
+                                <a href='/Detalhe/Apocaliptica' className='titulo'>APOCALIPTICA</a>
                                 <p>R$89.90</p>
                                 <button onClick={adicionar_produto_01} style={{backgroundColor:'#492C79',color:'white',cursor:'pointer',padding:'15px'}}>Adicionar ao Carrinho</button>
                             </div>
@@ -172,7 +172,7 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
                         <div class="pro-card">
                             <img src={imgcamisa}/>
                             <div class="card-content">
-                                <span>CHICLETINHO</span>
+                                <a href='/Detalhe/Chicletinho' className='titulo'>CHICLETINHO</a>
                                 <p>R$59.90</p>
                                 <button onClick={adicionar_produto_02} style={{backgroundColor:'#492C79',color:'white',cursor:'pointer',padding:'15px'}}>Adicionar ao Carrinho</button>
                                 <p>{valor}</p>
@@ -183,7 +183,7 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
                         <div class="pro-card">
                             <img src={imgcamisa}/>
                             <div class="card-content">
-                                <span>EMO IS NOT DEAD</span>
+                                <a href='/Detalhe/Emo' className='titulo'>EMO IS NOT DEAD</a>
                                 <p>R$49.90</p>
                                 <button onClick={adicionar_produto_03} style={{backgroundColor:'#492C79',color:'white',cursor:'pointer',padding:'15px'}}>Adicionar ao Carrinho</button>
                                 <p>{valor}</p>
@@ -194,7 +194,7 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
                         <div class="pro-card">
                             <img src={imgcamisa}/>
                             <div class="card-content">
-                                <span>MORCEGONA POKEMONA</span>
+                                <a href='/Detalhe/Morcegona' className='titulo'>MORCEGONA POKEMONA</a>
                                 <p>R$89.90</p>
                                 <button onClick={adicionar_produto_04} style={{backgroundColor:'#492C79',color:'white',cursor:'pointer',padding:'15px'}}>Adicionar ao Carrinho</button>
                                 <p>{valor}</p>
