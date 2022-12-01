@@ -26,6 +26,7 @@ import Footers from './Components/Basics/Footer/Footers';
 import { BsBag } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 import { Link } from 'react-router-dom'
+import Contato from './Components/Pages/Contato/Contato';
 
 
 
@@ -79,7 +80,6 @@ function App() {
       <BrowserRouter>
       <Header log = {logado}/>
       <Routes>
-        
         <Route path="/" element={<Home/>}></Route>
         <Route path="/Home" element={<Home/>}></Route>
         <Route path="/Perfil" element={<Perfil/>}></Route>
@@ -98,7 +98,7 @@ function App() {
         <Route path="/Sobre" element={<Sobre/>}></Route>
         <Route path="/Perfil/MeusDados" element={<MeusDados/>}></Route>
         <Route path="/Perfil/Pedidos" element={<Pedidos/>}></Route>
-
+        <Route path="/Contato" element={<Contato/>}> </Route>
 
       </Routes>
       <Footers/>
