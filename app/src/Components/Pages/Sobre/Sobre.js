@@ -1,5 +1,4 @@
-import Header from '../../Basics/Header_logada/Header_logada'
-import Footers from "../../Basics/Footer/Footers";
+
 
 import './Sobre.css'
 
@@ -11,7 +10,7 @@ export default function Sobre() {
                 <h3 className='titlepag'> Sobre a verter </h3>
 
                 <div className='containertext'> 
-                    <h3 className='subtitle'> Somos uma marca de vestuário digital e físico </h3>
+                    <h3 className='subtitle'> Somos uma marca de <br/> vestuário digital e físico </h3>
 
                     <p className='text'>
                     Nosso objetivo é apresentar uma nova maneira de se expressar através da <br/>
@@ -26,7 +25,12 @@ export default function Sobre() {
                 <div className='imagecontainer'>
                     <div className='imagemock' />
                 </div>
-
+                <div className='video'>
+                    <video controls>
+                        <source src="videoconceitual.mp4" type="video/mp4"/>
+                        Your browser does not support the video tag.
+                        </video>
+                </div>
                 <div className='snap'>
                 <h3 className='subtitle2'> Experiência Única</h3>
                 <p className='text'>
@@ -37,7 +41,6 @@ export default function Sobre() {
                     Experimente no Snapchat
                 </button>
                 </div>
-                
             </div>
             
         </div>
