@@ -19,6 +19,14 @@ body {
     margin-top: 72px;
     justify-content:flex-start;
     text-align: left;
+    flex-direction: column;
+}
+
+.containertext {
+    display: flex;
+    flex-direction:column;
+    gap: 24px;
+    width: 100%;
 }
 
 .titlepag {
@@ -31,7 +39,7 @@ body {
     margin-top: 187px;
     font-family:'Conthrax Regular';
     color: #fff;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .text {
@@ -39,4 +47,42 @@ body {
     font-size: 20px;
     margin-top: 40px;
     color: white;
+}
+
+.imagecontainer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagemock {
+    background-color: #D8C4E5;
+    background: linear-gradient(16.28deg, #000000 -41.06%, #321f52 72.61%);
+    height: 369px;
+    width: 323px;
+}
+
+.snap {
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsnap {
+    margin-top: 74px;
+    color: #fff;
+    background: transparent;
+    padding: 24px 32px;
+    font-family:'Source sans pro';
+    border: 1.5px solid #fff;
+    cursor: pointer;
+    transition: all 700ms ease;
+    font-size: 16px;
+    width: 300px;
+}
+
+.subtitle2 {
+    margin-top: 187px;
+    color: #fff;
+    font-size: 32px;
 }
