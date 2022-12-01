@@ -1,0 +1,12 @@
+.linha{
+    width: 100%;
+    border: 1px solid #492C79;
+}
+
+.titulo{
+    text-align: left;
+    padding: 15px 40px;
+    font-size: 24px;
+    color: #D8C4E5;
+    font-family: 'Conthrax Regular';
+}

@@ -7,9 +7,10 @@ import './Perfil.css'
 export default function Perfil () {
     return (
         <div className="container">
-            
+                    <h2 className="titulo"> Meu perfil </h2>
+                    <div className="linha"></div>    
                 <div className="content">
-                    <h3 className="title"> Meu perfil </h3>
+
                     <div className="buttons">
                         <a className="btnperfil" href='/Perfil/MeusDados'> 
                         meus dados
