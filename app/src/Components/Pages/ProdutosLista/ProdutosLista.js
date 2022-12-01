@@ -25,8 +25,10 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
         
         var produto_01 = {
             'id':1,
-            'nome':'Camisa_01',
-            'preco':50
+            'nome':'APOCALIPTICA',
+            'desc':'"Pandemias? Terremoto ? Bomba atômica? Saudades do mozão?  O look apocalipta resolve amore, aqui você não tem apenas um cropped, mas uma calça assimétrica babado pra agir e enfrentar a vida neste mundo em declínio. Usando tecido 100% reciclável e elástico, é super confortável pra aquele show da sua banda favorita, que parece mais uma maratona de São Silvestre. Fim do mundo sim, mas com estilo né gata?"',
+            'preco':89.90,
+            "imagem_" : "",
         }
         produtos_no_carrinhos.push(produto_01)
         add_vetor(produtos_no_carrinhos)
@@ -40,14 +42,48 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
         
         var produto_02 = {
             'id':2,
-            'nome':'Camisa_02',
-            'preco':70.00
+            'nome':'CHICLETINHO',
+            'desc':'*mastigando debochada* A chicletinho não gruda em ninguém não viu, a bicha sai solta pelas ruas vivendo a sua vida bélissima, o gloss dela é de babaloo! Feita com um tecido leve e descontraído o rosa desse look faz você estar sempre equilibrada entre a gostosa e a elegante! 100% recicladão tá bom fia? RAAAAAM! ',
+            'preco':59.90,
+            "imagem_" : "",
         }
         produtos_no_carrinhos.push(produto_02)
         setValores(valores + produto_02.preco)
         add_vetor(produtos_no_carrinhos)
         valor_carrinho(produto_02.preco)
     }
+
+    function adicionar_produto_03(){
+        
+        var produto_03 = {
+            'id':3,
+            "nome" : "EMO IS NOT DEAD",
+            "desc":"welcome to my life amoreee, é feita pra você que não é apenas emo mas também gótica, vampira e rockeira e pagodeira. É perfeita pra lembrar daquela época em que o Brasil tinha um presidente e você podia sofrer por amor no recreio da escola e não por não ter o minimo e o básico de direitos humanos. Produzida por um jeans recicladão e tecido de algodão reciclado é uma roupa confortável e divertida pra noite! ",
+            "preco": 49.90 ,
+            "imagem_" : "",
+        }
+        produtos_no_carrinhos.push(produto_03)
+        setValores(valores + produto_03.preco)
+        add_vetor(produtos_no_carrinhos)
+        valor_carrinho(produto_03.preco)
+    }
+
+    function adicionar_produto_04(){
+        
+        var produto_04 = {
+            'id':4,
+            "nome" : "MORCEGONA POKEMONA ",
+            "desc":"Imagina só tu caçar pokemons durante o intervalo do rolê com essa roupa perfeita e pronta para o ataque! Aqui é close por cima de close, uma quebração de tabu gigante! O material da calça é 100% jeans reciclado com uma brusinha sensual e super confortável de algodão, ou seja você fecha o tempo mas não fica no frio, mas se ainda sentir frio, coloca uma jaqueta que fica um lacry, dica da vovó.",
+            "preco": 89.90 ,
+            "imagem_" : "",
+        }
+        produtos_no_carrinhos.push(produto_04)
+        setValores(valores + produto_04.preco)
+        add_vetor(produtos_no_carrinhos)
+        valor_carrinho(produto_04.preco)
+    }
+
+    
 
 
     return(
@@ -126,8 +162,8 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
                         <div class="pro-card">
                             <img src={imgcamisa}/>
                             <div class="card-content">
-                                <span>Camisa ALG correntes</span>
-                                <p>R$50,00</p>
+                                <span>APOCALIPTICA</span>
+                                <p>R$89.90</p>
                                 <button onClick={adicionar_produto_01} style={{backgroundColor:'#492C79',color:'white',cursor:'pointer',padding:'15px'}}>Adicionar ao Carrinho</button>
                             </div>
                             
@@ -136,9 +172,31 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
                         <div class="pro-card">
                             <img src={imgcamisa}/>
                             <div class="card-content">
-                                <span>Camisa ALG correntes</span>
-                                <p>R$70,00</p>
+                                <span>CHICLETINHO</span>
+                                <p>R$59.90</p>
                                 <button onClick={adicionar_produto_02} style={{backgroundColor:'#492C79',color:'white',cursor:'pointer',padding:'15px'}}>Adicionar ao Carrinho</button>
+                                <p>{valor}</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="pro-card">
+                            <img src={imgcamisa}/>
+                            <div class="card-content">
+                                <span>EMO IS NOT DEAD</span>
+                                <p>R$49.90</p>
+                                <button onClick={adicionar_produto_03} style={{backgroundColor:'#492C79',color:'white',cursor:'pointer',padding:'15px'}}>Adicionar ao Carrinho</button>
+                                <p>{valor}</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="pro-card">
+                            <img src={imgcamisa}/>
+                            <div class="card-content">
+                                <span>MORCEGONA POKEMONA</span>
+                                <p>R$89.90</p>
+                                <button onClick={adicionar_produto_04} style={{backgroundColor:'#492C79',color:'white',cursor:'pointer',padding:'15px'}}>Adicionar ao Carrinho</button>
                                 <p>{valor}</p>
                             </div>
                             

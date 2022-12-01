@@ -30,7 +30,7 @@ export default function Carrinho({valor,vetor,log}) {
         <div class="car-body">
             <div class="car-cards">
                 {
-                    vetor.map((nomes,i) => <Item key={i} nome={nomes[0].nome} preco={nomes[0].preco}/>)
+                    vetor.map((nomes,i) => <Item key={i} nome={nomes[0].nome} preco={nomes[0].preco} desc={nomes[0].desc}/>)
                 }
                 
                 
@@ -38,7 +38,7 @@ export default function Carrinho({valor,vetor,log}) {
             <div class="car-pay">
                 <div class="pay-tittle">
                     <h2>Subtotal</h2>
-                    <span>R${valor},00</span>
+                    <span>R${valor}</span>
                 </div>
                 <div class="entrega">
                     <h2>Calcular entrega</h2>

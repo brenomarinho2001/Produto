@@ -7,6 +7,7 @@ import Footers from '../../Basics/Footer/Footers'
 import Header from '../../Basics/Header_logada/Header_logada'
 
 import './FinalizarCss.css'
+import imgcamisa from '../../images/Roupas/camisa.png'
 
 export default function Finalizar() {
     return (
@@ -31,7 +32,7 @@ export default function Finalizar() {
                 <span>Itens do pedido</span>
                 <div class="pedido-content">
                     <div class="pedido-card">
-                        <img src="img/image 18.png" alt=""/>
+                        <img src={imgcamisa}/>
                         <div class="card-content">
                             <p>Camisa ALG Correntes</p>
                             <div class="div-box">
@@ -41,7 +42,7 @@ export default function Finalizar() {
                         </div>
                     </div>
                     <div class="pedido-card">
-                        <img src="img/image 18.png" alt=""/>
+                        <img src={imgcamisa}/>
                         <div class="card-content">
                             <p>Camisa ALG Correntes</p>
                             <div class="div-box">
@@ -51,7 +52,7 @@ export default function Finalizar() {
                         </div>
                     </div>
                     <div class="pedido-card">
-                        <img src="img/image 18.png" alt=""/>
+                        <img src={imgcamisa}/>
                         <div class="card-content">
                             <p>Camisa ALG Correntes</p>
                             <div class="div-box">
@@ -61,7 +62,7 @@ export default function Finalizar() {
                         </div>
                     </div>
                     <div class="pedido-card">
-                        <img src="img/image 18.png" alt=""/>
+                        <img src={imgcamisa}/>
                         <div class="card-content">
                             <p>Camisa ALG Correntes</p>
                             <div class="div-box">
@@ -96,35 +97,35 @@ export default function Finalizar() {
     <h2 class="quemviu">Quem viu, comprou:</h2>
     <div class="recomendacao">
         <div class="rec-card">
-            <img src="./img/image 18.png" alt=""/>
+            <img src={imgcamisa}/>
             <div class="card-content">
                 <p>Camisa ALG correntes</p>
                 <p>R$69,90</p>
             </div>
         </div>
         <div class="rec-card">
-            <img src="./img/image 18.png" alt=""/>
+          <img src={imgcamisa}/>
             <div class="card-content">
                 <p>Camisa ALG correntes</p>
                 <p>R$69,90</p>
             </div>
         </div>
         <div class="rec-card">
-            <img src="./img/image 18.png" alt=""/>
+            <img src={imgcamisa}/>
             <div class="card-content">
                 <p>Camisa ALG correntes</p>
                 <p>R$69,90</p>
             </div>
         </div>
         <div class="rec-card">
-            <img src="./img/image 18.png" alt=""/>
+            <img src={imgcamisa}/>
             <div class="card-content">
                 <p>Camisa ALG correntes</p>
                 <p>R$69,90</p>
             </div>
         </div>
         <div class="rec-card">
-            <img src="./img/image 18.png" alt=""/>
+        <img src={imgcamisa}/>
             <div class="card-content">
                 <p>Camisa ALG correntes</p>
                 <p>R$69,90</p>

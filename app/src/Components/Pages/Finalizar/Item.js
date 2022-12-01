@@ -9,7 +9,7 @@ import './CarrinhoCss.css'
 
 import imgcamisa from '../../images/Roupas/camisa.png'
 
-export default function Item({id,nome,preco,desc}) {
+export default function Item({id,nome,preco}) {
     return (
        
     <div class="card">
@@ -21,13 +21,9 @@ export default function Item({id,nome,preco,desc}) {
                 <span>{nome}</span>
                 <span>R$ {preco}</span>
             </div>
-            <div class="card-desc" style={{padding:'20px'}}>
-                <hr/>
-                <p>{desc}</p>
-                <hr/>
+            <div class="card-desc">
                 <div class="desc">Digital</div>
                 <div class="desc">01</div>
-
             </div>
             <div class="delete"></div>
         </div>
