@@ -9,6 +9,19 @@ import './DetalheProdutoApocaliotica.css'
 import qrcode from '../../images/qrcode.png';
 import pix from '../../images/pix.png';
 import pagseguro from '../../images/pagseguro.png';
+import a1 from '../../images/Roupas/a1.png'
+
+//4 IMAGENS
+import imgApo from '../../images/Roupas/apocaliptica.png'
+
+import imgApoa1 from '../../images/Roupas/a1.png'
+import imgApoa2 from '../../images/Roupas/a2.png'
+import imgApoa3 from '../../images/Roupas/a3.png'
+
+import imaApoc1 from '../../images/Roupas/c1.png'
+import imaApoc2 from '../../images/Roupas/c2.png'
+import imaApoc3 from '../../images/Roupas/c3.png'
+
 
 export default function DetalheProduto () {
     return (
@@ -51,14 +64,16 @@ export default function DetalheProduto () {
                         </div>
                     </div>
                     <div className='imagecontainer'>
-                        <div className='imagemock' />
-
+                        <img className='imagemock' src={imgApo} />
+                            
                         <div className='imageslider'>
-                            <div className='imagemock' />
-                            <div className='imagemock' />
-                            <div className='imagemock' />
-                            <div className='imagemock' />
-                            <div className='imagemock' />
+                            <img className='imagemock' src={imgApoa1}>
+                            </img>
+                            <img className='imagemock' src={imgApoa2}>
+                            </img>
+                            <img className='imagemock' src={imgApoa3}>
+                            </img>
+
                         </div>
                     </div>
                 </div>

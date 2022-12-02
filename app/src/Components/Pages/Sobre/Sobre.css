@@ -62,13 +62,14 @@ body {
     display: flex;
     flex: 1;
     align-items: center;
+    
     flex-direction: column;
 }
 
 .imagemock {
     background-color: #D8C4E5;
     background: linear-gradient(16.28deg, #000000 -41.06%, #321f52 72.61%);
-    height: 369px;
+    
     width: 323px;
 }
 
