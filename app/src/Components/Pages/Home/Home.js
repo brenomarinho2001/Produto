@@ -2,12 +2,17 @@ import Header from '../../Basics/Header_logada/Header_logada'
 import Footers from "../../Basics/Footer/Footers";
 import './Home.css'
 import imgcamisa from '../../images/Roupas/camisa.png'
+import home from '../../images/home.png'
 import { Link } from "react-router-dom";
 import { Zoom } from "react-slideshow-image";
 
 import banner_01 from '../../images/banners/banner1.png'
 import banner_02 from '../../images/banners/banner2.png'
 import banner_03 from '../../images/banners/banner 3-final.png'
+import img_chiclete from '../../images/Roupas/chicletinho.png'
+import img_emo from '../../images/Roupas/emo.png'
+import img_apocaliotica from '../../images/Roupas/apocaliptica.png'
+import img_morcegona from '../../images/Roupas/morcegona.png'
 
 
 export default function Home () {
@@ -45,25 +50,25 @@ export default function Home () {
                 <h3 className='tituolo-sessao'>ultímos lançamentos </h3>
                 <div class="produtos">
                         <div class="pro-card">
-                            <img src={imgcamisa}/>
+                            <img src={img_chiclete}/>
                             <div class="card-content">
-                                <span>Camisa ALG correntes</span>
+                                <span>Chicletinho</span>
                                 <p>R$69,90</p>
                             </div>
                         </div>
 
                         <div class="pro-card">
-                            <img src={imgcamisa}/>
+                            <img src={img_morcegona}/>
                             <div class="card-content">
-                                <span>Camisa ALG correntes</span>
+                                <span>Morcegona Pokemona</span>
                                 <p>R$69,90</p>
                             </div>
                         </div>
 
                         <div class="pro-card">
-                            <img src={imgcamisa}/>
+                            <img src={img_apocaliotica}/>
                             <div class="card-content">
-                                <span>Camisa ALG correntes</span>
+                                <span>Apocaliptica</span>
                                 <p>R$69,90</p>
                             </div>
                         </div>
@@ -80,26 +85,26 @@ export default function Home () {
                 <h3 className='tituolo-sessao'> sucesso de vendas </h3>
                 <div class="produtos">
                         <div class="pro-card">
-                            <img src={imgcamisa}/>
+                            <img src={img_chiclete}/>
                             <div class="card-content">
-                                <span>Camisa ALG correntes</span>
+                                <span>Chicletinho</span>
+                                <p>R$59,90</p>
+                            </div>
+                        </div>
+
+                        <div class="pro-card">
+                            <img src={img_morcegona}/>
+                            <div class="card-content">
+                                <span>Morcegona Pokemona</span>
                                 <p>R$69,90</p>
                             </div>
                         </div>
 
                         <div class="pro-card">
-                            <img src={imgcamisa}/>
+                            <img src={img_apocaliotica}/>
                             <div class="card-content">
-                                <span>Camisa ALG correntes</span>
-                                <p>R$69,90</p>
-                            </div>
-                        </div>
-
-                        <div class="pro-card">
-                            <img src={imgcamisa}/>
-                            <div class="card-content">
-                                <span>Camisa ALG correntes</span>
-                                <p>R$69,90</p>
+                                <span>Apocaliptica</span>
+                                <p>R$89,90</p>
                             </div>
                         </div>
 
@@ -117,7 +122,7 @@ export default function Home () {
                 <div className='direita'>
 
                     <div className='expositor'>
-                        <img src={imgcamisa}/>
+                        <img src={home}/>
 
                     </div>
 

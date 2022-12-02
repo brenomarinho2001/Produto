@@ -10,6 +10,12 @@ import qrcode from '../../images/qrcode.png';
 import pix from '../../images/pix.png';
 import pagseguro from '../../images/pagseguro.png';
 
+import imgApoc1 from '../../images/Roupas/c1.png'
+import imgApoc2 from '../../images/Roupas/c2.png'
+import imgApoc3 from '../../images/Roupas/c3.png'
+
+import imgApocp from '../../images/Roupas/chicletinho.png'
+
 export default function DetalheProduto () {
     return (
         <div className='container'> 
@@ -51,14 +57,12 @@ export default function DetalheProduto () {
                         </div>
                     </div>
                     <div className='imagecontainer'>
-                        <div className='imagemock' />
+                        <img className='imagemock' src={imgApocp} />
 
                         <div className='imageslider'>
-                            <div className='imagemock' />
-                            <div className='imagemock' />
-                            <div className='imagemock' />
-                            <div className='imagemock' />
-                            <div className='imagemock' />
+                            <img className='imagemock' src={imgApoc1} />
+                            <img className='imagemock' src={imgApoc2}/>
+                            <img className='imagemock' src={imgApoc3}/>
                         </div>
                     </div>
                 </div>

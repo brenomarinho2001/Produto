@@ -188,7 +188,7 @@ body {
 .imagemock {
     background-color: #D8C4E5;
     background: linear-gradient(16.28deg, #000000 -41.06%, #321f52 72.61%);
-    height: 460px;
+    height: auto;
     max-width: 536px;
     width: 100%;
 }
@@ -206,8 +206,6 @@ body {
 .imageslider .imagemock {
     cursor: pointer;
     flex-shrink: 0;
-    height: 122px !important;
-    width: 122px !important;
 }
 
 @media only screen and (max-width: 800px) {

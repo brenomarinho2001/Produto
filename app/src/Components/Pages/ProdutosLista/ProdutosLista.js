@@ -1,7 +1,10 @@
 import Footers from '../../Basics/Footer/Footers'
 import Header from '../../Basics/Header_logada/Header_logada'
 import './ProdutosListaCss.css'
-import imgcamisa from '../../images/Roupas/camisa.png'
+import img_chiclete from '../../images/Roupas/chicletinho.png'
+import img_emo from '../../images/Roupas/emo.png'
+import img_apocaliotica from '../../images/Roupas/apocaliptica.png'
+import img_morcegona from '../../images/Roupas/morcegona.png'
 
 import { useState } from 'react'
 
@@ -160,7 +163,7 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
                     </aside>
                     <div class="produtos">
                         <div class="pro-card">
-                            <img src={imgcamisa}/>
+                            <img src={img_apocaliotica}/>
                             <div class="card-content">
                                 <a href='/Detalhe/Apocaliptica' className='titulo'>APOCALIPTICA</a>
                                 <p>R$89.90</p>
@@ -170,7 +173,7 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
                         </div>
 
                         <div class="pro-card">
-                            <img src={imgcamisa}/>
+                            <img src={img_chiclete}/>
                             <div class="card-content">
                                 <a href='/Detalhe/Chicletinho' className='titulo'>CHICLETINHO</a>
                                 <p>R$59.90</p>
@@ -181,7 +184,7 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
                         </div>
 
                         <div class="pro-card">
-                            <img src={imgcamisa}/>
+                            <img src={img_emo}/>
                             <div class="card-content">
                                 <a href='/Detalhe/Emo' className='titulo'>EMO IS NOT DEAD</a>
                                 <p>R$49.90</p>
@@ -192,7 +195,7 @@ export default function ProdutosLista({valor,valor_carrinho,add_vetor,vetor}){
                         </div>
 
                         <div class="pro-card">
-                            <img src={imgcamisa}/>
+                            <img src={img_morcegona}/>
                             <div class="card-content">
                                 <a href='/Detalhe/Morcegona' className='titulo'>MORCEGONA POKEMONA</a>
                                 <p>R$89.90</p>
